@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CI RUNS &mdash; ReadTheDocs Demo  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a7456d8d" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/rapyuta_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">CI RUNS</a><ul>
+<li><a class="reference internal" href="#ci-run-for-specific-suite">CI Run for Specific Suite:</a><ul>
+<li><a class="reference internal" href="#steps-to-run-ci-workflow">Steps to Run CI Workflow</a></li>
+<li><a class="reference internal" href="#ci-run-for-performance-tests">4. CI Run for Performance tests:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ReadTheDocs Demo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CI RUNS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ci_run.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ci-runs">
+<h1>CI RUNS<a class="headerlink" href="#ci-runs" title="Link to this heading"></a></h1>
+<section id="ci-run-for-specific-suite">
+<h2>CI Run for Specific Suite:<a class="headerlink" href="#ci-run-for-specific-suite" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Initiate integration/E2E test, Initiate test run for specific suite to ensure that the test suite is passing in devel or release branch or in feature branch</p></li>
+</ol>
+<p>Navigate to Actions tab in sootballs_test repo</p>
+<a class="reference internal image-reference" href="_images/pic1.png"><img alt="CI Run" class="align-center" src="_images/pic1.png" style="width: 600px;" />
+</a>
+<br><br><p>Navigate to integration/E2E test tab in Action module</p>
+<a class="reference internal image-reference" href="_images/pic2.png"><img alt="CI Run" class="align-center" src="_images/pic2.png" style="width: 600px;" />
+</a>
+<br><br><section id="steps-to-run-ci-workflow">
+<h3>Steps to Run CI Workflow<a class="headerlink" href="#steps-to-run-ci-workflow" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Click run_workflow icon and fill the details like below,</p></li>
+<li><p>Use workflow from –&gt; this is always devel only. We don’t have to change this</p></li>
+<li><p>Git reference for both rr_sootballs –&gt; branch of rr_sootballs</p>
+<ul class="simple">
+<li><p>If we need to run in devel, enter “devel”</p></li>
+<li><p>If we need to run in release branch, enter release name</p></li>
+<li><p>If we need to run in specific feature branch, enter the feature branch name</p></li>
+</ul>
+</li>
+<li><p>Git reference for sootballs_tests –&gt; branch of sootballs_test repo (our code branch)</p></li>
+<li><p>Tag of the sootballs image to test against –&gt; tag of the rr_sootballs branch.</p>
+<ul class="simple">
+<li><p>For example, for devel branch, “devel” is tag.</p></li>
+<li><p>For release branch “3.5.0-rc1”, “3.5.0-rc0”, etc like, for our particular test branch “branch name” should be used.</p></li>
+</ul>
+</li>
+<li><p>Test suite to run –&gt; path to the test suite should be entered in this</p></li>
+<li><p>Timeout for the tests (minutes) –&gt; default timeout will be 40. If that suite takes long time, we can change.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/pic3.png"><img alt="CI Run" class="align-center" src="_images/pic3.png" style="width: 600px;" />
+</a>
+<br><br><a class="reference internal image-reference" href="_images/pic4.png"><img alt="CI Run" class="align-center" src="_images/pic4.png" style="width: 600px;" />
+</a>
+<br><br><a class="reference internal image-reference" href="_images/pic5.png"><img alt="CI Run" class="align-center" src="_images/pic5.png" style="width: 600px;" />
+</a>
+<br><br><a class="reference internal image-reference" href="_images/pic6.png"><img alt="CI Run" class="align-center" src="_images/pic6.png" style="width: 600px;" />
+</a>
+<br><br><a class="reference internal image-reference" href="_images/pic7.png"><img alt="CI Run" class="align-center" src="_images/pic7.png" style="width: 600px;" />
+</a>
+<br><br><a class="reference internal image-reference" href="_images/pic8.png"><img alt="CI Run" class="align-center" src="_images/pic8.png" style="width: 600px;" />
+</a>
+<br><br><p><strong>2. CI Run for Nightly Tests</strong></p>
+<p>Navigate to the Nightly tests tab and click workflow.
+Run the workflow in whichever branch we need.</p>
+<a class="reference internal image-reference" href="_images/pic9.png"><img alt="CI Run" class="align-center" src="_images/pic9.png" style="width: 600px;" />
+</a>
+<br><br><p><strong>3. CI Run for Confidence tests:</strong></p>
+<p>Navigate to Confidence tests tab and click workflow. In rr_sootballs reference we can give in which branch of rr_sootballs we are going to run the suite. In sootballs test, we can give in which branch of sootballs_tests we are going to run the suite.</p>
+<a class="reference internal image-reference" href="_images/pic10.png"><img alt="CI Run" class="align-center" src="_images/pic10.png" style="width: 600px;" />
+</a>
+<br><br></section>
+<section id="ci-run-for-performance-tests">
+<h3>4. CI Run for Performance tests:<a class="headerlink" href="#ci-run-for-performance-tests" title="Link to this heading"></a></h3>
+<p>Navigate to Performance tests tab and click workflow. In rr_sootballs reference we can give in which branch of rr_sootballs we are going to run the suite. In sootballs test, we can give in which branch of sootballs_tests we are going to run the suite.</p>
+<a class="reference internal image-reference" href="_images/pic11.png"><img alt="CI Run" class="align-center" src="_images/pic11.png" style="width: 600px;" />
+</a>
+<br><br><ol class="arabic simple" start="5">
+<li><p>Add every suite in run_all_nightly file to run in daily ci while adding a new suite everytime.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/pic12.png"><img alt="CI Run" class="align-center" src="_images/pic12.png" style="width: 600px;" />
+</a>
+<br><br></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Rajkumar Subbiaya.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

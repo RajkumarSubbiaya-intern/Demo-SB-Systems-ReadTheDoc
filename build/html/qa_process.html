@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QA Process &mdash; ReadTheDocs Demo  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a7456d8d" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/rapyuta_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">QA Process</a><ul>
+<li><a class="reference internal" href="#bug-life-cycle">Bug Life Cycle</a></li>
+<li><a class="reference internal" href="#traceability-matrix">Traceability Matrix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#our-qa-process-for-each-epic">Our QA Process for Each EPIC</a></li>
+<li><a class="reference internal" href="#team-responsibilities">Team Responsibilities</a></li>
+<li><a class="reference internal" href="#bug-testing-process">BUG Testing Process</a><ul>
+<li><a class="reference internal" href="#id1">Bug Testing Process</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#process-to-do-on-ci-run-failures">PROCESS TO DO on CI RUN FAILURES</a></li>
+<li><a class="reference internal" href="#process-to-write-test-case">PROCESS TO WRITE TEST CASE</a><ul>
+<li><a class="reference internal" href="#types-of-tasks-in-azure-devops-sprint-board-management">Types of Tasks in Azure devops - sprint board management</a><ul>
+<li><a class="reference internal" href="#requirement-analysis">1. Requirement Analysis</a></li>
+<li><a class="reference internal" href="#test-planning-design">2. Test Planning &amp; Design</a></li>
+<li><a class="reference internal" href="#test-environment-setup">3. Test Environment Setup</a></li>
+<li><a class="reference internal" href="#test-execution">4. Test Execution</a></li>
+<li><a class="reference internal" href="#defect-tracking-retesting">5. Defect Tracking &amp; Retesting</a></li>
+<li><a class="reference internal" href="#regression-testing">6. Regression Testing</a></li>
+<li><a class="reference internal" href="#test-reporting">7. Test Reporting</a></li>
+<li><a class="reference internal" href="#release-testing">8. Release Testing</a></li>
+<li><a class="reference internal" href="#post-release-activities">9. Post-Release Activities</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ReadTheDocs Demo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">QA Process</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/qa_process.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="qa-process">
+<h1>QA Process<a class="headerlink" href="#qa-process" title="Link to this heading"></a></h1>
+<a class="reference internal image-reference" href="_images/pic13.png"><img alt="QA Process" class="align-center" src="_images/pic13.png" style="width: 600px;" />
+</a>
+<br><br><section id="bug-life-cycle">
+<h2>Bug Life Cycle<a class="headerlink" href="#bug-life-cycle" title="Link to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/pic21.png"><img alt="Bug Life Cycle" class="align-center" src="_images/pic21.png" style="width: 600px;" />
+</a>
+<br><br></section>
+<section id="traceability-matrix">
+<h2>Traceability Matrix<a class="headerlink" href="#traceability-matrix" title="Link to this heading"></a></h2>
+<p><strong>EPIC/Feature -&gt; QA User Story - Azure Devops (Unique test cases)</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>EPIC/Feature</p></th>
+<th class="head"><p>User Story</p></th>
+<th class="head"><p>Test Case ID</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>EPIC1</p></td>
+<td><p>US1</p></td>
+<td><p>TC_001</p></td>
+<td><p>Passed</p></td>
+</tr>
+<tr class="row-odd"><td><p>EPIC1</p></td>
+<td><p>US1</p></td>
+<td><p>TC_002</p></td>
+<td><p>Passed</p></td>
+</tr>
+<tr class="row-even"><td><p>Feature2</p></td>
+<td><p>US2</p></td>
+<td><p>TC_003</p></td>
+<td><p>Passed</p></td>
+</tr>
+<tr class="row-odd"><td><p>EPIC3</p></td>
+<td><p>US3</p></td>
+<td><p>TC_004</p></td>
+<td><p>Passed</p></td>
+</tr>
+<tr class="row-even"><td><p>EPIC3</p></td>
+<td><p>US3</p></td>
+<td><p>TC_005</p></td>
+<td><p>Passed</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="_images/pic31.png"><img alt="QA Process" class="align-center" src="_images/pic31.png" style="width: 600px;" />
+</a>
+<br><br><p><strong>Tracking Our EPIC/Feature Requirements in the Sootballs Dashboard</strong></p>
+<p>As part of our commitment to delivering high-quality products, we are utilizing our QA user story to conduct comprehensive testing linked to each EPIC in the Sootballs dashboard. Each EPIC encapsulates unique requirements that our development team is diligently working on.</p>
+<p>To streamline our efforts, we will focus on a single user story within the sootballs-common-dev area for tracking requirements and visualizing our progress on the dashboard.</p>
+</section>
+</section>
+<section id="our-qa-process-for-each-epic">
+<h1>Our QA Process for Each EPIC<a class="headerlink" href="#our-qa-process-for-each-epic" title="Link to this heading"></a></h1>
+<p>For every QA user story associated with an EPIC, we will implement a series of tasks on our QA board to ensure thorough coverage and testing. Here’s what you can expect:</p>
+<ol class="arabic simple">
+<li><p><strong>Test Plan</strong>:
+Develop a detailed test design for the specified requirement.</p></li>
+<li><p><strong>Test Cases in Test Plan</strong>:
+Create and document test cases in Azure that align with the requirement.</p></li>
+<li><p><strong>Manual Testing</strong>:
+Execute the test cases manually, capturing all results for review.</p></li>
+<li><p><strong>Test Automation CI Runs</strong>:
+Automate selected test cases, with Allure reports generating and documenting test results.</p></li>
+<li><p><strong>Test Automation - PR Tracking</strong>:
+For each test case automation, create a pull request (PR), create a corresponding task, and link it back to the requirement to maintain traceability.</p></li>
+</ol>
+<p>By following this structured approach, we ensure that each requirement (i.e., EPIC) is thoroughly tracked with all necessary QA tasks, leading us toward the successful delivery of a high-quality product.</p>
+</section>
+<section id="team-responsibilities">
+<h1>Team Responsibilities<a class="headerlink" href="#team-responsibilities" title="Link to this heading"></a></h1>
+<a class="reference internal image-reference" href="_images/pic41.png"><img alt="Team Responsibilities" class="align-center" src="_images/pic41.png" style="width: 600px;" />
+</a>
+<br><br></section>
+<section id="bug-testing-process">
+<h1>BUG Testing Process<a class="headerlink" href="#bug-testing-process" title="Link to this heading"></a></h1>
+<a class="reference internal image-reference" href="_images/pic51.png"><img alt="BUG Testing Process" class="align-center" src="_images/pic51.png" style="width: 600px;" />
+</a>
+<br><br><section id="id1">
+<h2>Bug Testing Process<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><strong>Step 1: Task Creation</strong></p>
+<ul class="simple">
+<li><p><strong>Lead</strong>: Create a task for the bug if it’s already planned for the sprint.</p></li>
+<li><p><strong>Ad-hoc Testing</strong>: If the bug is tested on an ad-hoc request, the test engineer must create a task and add it to the current sprint iteration.</p></li>
+</ul>
+<p><strong>Step 2: Testing Procedure</strong></p>
+<ul class="simple">
+<li><p><strong>Case 1</strong>:
+1. <strong>Add Test Case</strong>: While testing manually, create a new test case and link it. Plan to automate it later.
+2. <strong>Document Outcomes</strong>: Record the test outcomes in the bug ticket after manual verification. Ensure to create and link a new work item of type <em>“test case.”</em></p></li>
+<li><p><strong>Case 2</strong>:
+1. <strong>Update Existing Test Case</strong>: Add a new test step to an existing test case. Automate it if feasible; if not, plan for automation later.
+2. <strong>Document Outcomes</strong>: Record the test outcomes in the bug ticket after manual verification.</p></li>
+</ul>
+<p><strong>Step 3: Automation Task Creation</strong></p>
+<ul class="simple">
+<li><p><strong>QA Lead</strong>: Create a backlog task for test automation.</p></li>
+<li><p><strong>Assigned Test Engineer</strong>: Discuss whether to modify existing test scripts or create new ones.</p></li>
+</ul>
+<p><strong>Step 4: Automation Execution</strong></p>
+<ul class="simple">
+<li><p><strong>Prioritization</strong>: Execute test automation based on backlog prioritization.</p></li>
+</ul>
+<p><strong>Step 5: Integration with CI</strong></p>
+<ul class="simple">
+<li><p><strong>Add to CI</strong>: Include the test script in the regression testing - Continuous Integration (CI) runs.</p></li>
+<li><p><strong>Test Placement</strong>: Determine the type of test placement (e.g., nightly, confidence, integration).</p></li>
+<li><p><strong>Assigned Test Engineer</strong>: Discuss the automation task and placement.</p></li>
+</ul>
+<p><strong>Step 6: Task Closure</strong></p>
+<ul class="simple">
+<li><p>The task can be closed only after merging the Pull Request (PR) in the <cite>sootballs_tests</cite> repository.</p></li>
+<li><p>Update the GitHub PR request with this task.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="process-to-do-on-ci-run-failures">
+<h1>PROCESS TO DO on CI RUN FAILURES<a class="headerlink" href="#process-to-do-on-ci-run-failures" title="Link to this heading"></a></h1>
+<a class="reference internal image-reference" href="_images/pic61.png"><img alt="CI Run Failures" class="align-center" src="_images/pic61.png" style="width: 600px;" />
+</a>
+<br><br><p><strong>Steps to Handle Test Script Failures in Regression Testing CI Run</strong></p>
+<ol class="arabic">
+<li><p>Identify Multiple Failures (🔍)
+- Check if multiple test failures are linked to the same reason (e.g., network timeout).</p></li>
+<li><p>Resolve Temporary Issues (🛠️)
+- If a temporary issue (like network unavailability) caused the failures, wait until it’s fixed.
+- Re-run all test cases to verify if failures persist.</p></li>
+<li><p>Evaluate Test Results (⚖️)
+- If no issues are observed after the fix, the previous failures can be disregarded.
+- If issues still exist, proceed to the next step.</p></li>
+<li><p>Document the Issue if it’s a design change or product issue (📝)
+- If the quality engineer is unsure of the failure’s cause:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create a bug work item.</p></li>
+<li><p>Post in the <strong>#rr_sootballs_qa</strong> channel or bring it up during the standup to inform the team.</p></li>
+<li><p>Skip the failing tests in nightly runs, mentioning the related Azure “bug” ID.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Assess Test Script or Design Changes (⚙️🔧)
+- If the failure is due to a problem with the test script:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create a task work item titled: <strong>Fix for the CI failure on &lt;script title-subtitle&gt;</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Sprint Management (📅)
+- The QA lead should ensure the task is tagged to the current sprint if it is to be fixed in this sprint.</p></li>
+<li><p>Collaborate with Developers (👥)
+- The QA lead should consult developers regarding any bugs suspected to be product-related rather than script-related.</p></li>
+</ol>
+</section>
+<section id="process-to-write-test-case">
+<h1>PROCESS TO WRITE TEST CASE<a class="headerlink" href="#process-to-write-test-case" title="Link to this heading"></a></h1>
+<a class="reference internal image-reference" href="_images/pic71.png"><img alt="Write Test Case" class="align-center" src="_images/pic71.png" style="width: 600px;" />
+</a>
+<br><br><p>The decorator &#64;allure.link must be added to every PR when we are adding a new test case which will help us to link the automation run with azure.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&#64;allure.link(</dt><dd><p>url=”<a class="reference external" href="https://dev.azure.com/rapyuta-robotics/sootballs/_workitems/edit/6830/">https://dev.azure.com/rapyuta-robotics/sootballs/_workitems/edit/6830/</a>”,
+link_type=LinkType.TEST_CASE,</p>
+</dd>
+</dl>
+<p>)</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="types-of-tasks-in-azure-devops-sprint-board-management">
+<h2>Types of Tasks in Azure devops - sprint board management<a class="headerlink" href="#types-of-tasks-in-azure-devops-sprint-board-management" title="Link to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/pic81.png"><img alt="Azure Devops Tasks" class="align-center" src="_images/pic81.png" style="width: 600px;" />
+</a>
+<br><br><section id="requirement-analysis">
+<h3>1. Requirement Analysis<a class="headerlink" href="#requirement-analysis" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Understand the software</strong>:
+Review the feature documents, user stories, and other relevant documentation to understand what the software is supposed to do.
+Example: We will get the feature request in Azure DevOps.</p></li>
+<li><p><strong>Discussion with stakeholders</strong>:
+During meetings with the development team manager or feature owner, QA should ask relevant questions to clarify requirements.
+If unclear, reach out to the product team for further clarification.</p></li>
+<li><p><strong>Identify testing objectives</strong>:
+Determine what needs to be tested and identify the scope.</p></li>
+<li><p><strong>Create QA user story</strong>:
+Create a QA user story for the requirement user story in Sootballs Dashboard for the release if it’s a feature request user story. Outline the testing scope whichever feasible to, approach, resources, schedule, and deliverables.</p></li>
+</ul>
+</section>
+<section id="test-planning-design">
+<h3>2. Test Planning &amp; Design<a class="headerlink" href="#test-planning-design" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Design test cases</strong>:
+Create detailed test cases that cover all functional, End to end tests as well as edge cases of the feature or the fixes provided for bugs.</p>
+<ul>
+<li><p><strong>Test steps</strong>:  The specific actions to be performed during the test.</p></li>
+<li><p><strong>Configuration</strong>: Write the needed configuration in the test case.  Example :
+- <strong>Test data</strong>: The input data used for the test say order.csv files to be attached to the test cases.</p></li>
+<li><p><strong>Expected results</strong>: The anticipated outcome of the test.</p></li>
+</ul>
+</li>
+<li><p><strong>Create test scenarios</strong>:
+Develop higher-level scenarios that represent real-world usage of the feature by customer use cases. Consider all the aspects of how it will be used by the customer.</p></li>
+<li><p><strong>Update task in Azure DevOps</strong>:
+Update the task created in azure devops for that test plan. Ensure that the task is linked to the QA user story which is linked to the requirement user story in Sootballs dashboard.</p></li>
+</ul>
+</section>
+<section id="test-environment-setup">
+<h3>3. Test Environment Setup<a class="headerlink" href="#test-environment-setup" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Prepare the environment</strong>:
+Set up the necessary environment by updating the correct git version, pulling images hardware, software, and network configurations, environment variables if any and set up the environment.</p></li>
+</ul>
+</section>
+<section id="test-execution">
+<h3>4. Test Execution<a class="headerlink" href="#test-execution" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Execute test cases</strong>:
+Perform manual or automated tests according to the test plan.</p></li>
+<li><p><strong>Record test results</strong>:
+Document the actual results of each test case, including any deviations from expected results.</p></li>
+<li><p><strong>dentify and log defects</strong>:
+Report any bugs found during testing using the “Bug” Workitemtype in  Azuredevops.</p></li>
+<li><p>Link the manual test case and automated test case if  automation completed to the bug in “Steps to reproduce”</p></li>
+<li><p>If we have the automated test case failing, skip the test     case by using pytest skip test and also link the azure bug workitemtype in git and make a commit. Once the defect is fixed, we need to re-test this test case and again make a PR.</p></li>
+</ul>
+</section>
+<section id="defect-tracking-retesting">
+<h3>5. Defect Tracking &amp; Retesting<a class="headerlink" href="#defect-tracking-retesting" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Track and manage defects</strong>:
+Monitor the status of reported defects and work with developers to resolve them.</p></li>
+<li><p><strong>Retest fixed defects</strong>:
+Re-execute the affected test cases to verify that the fixes are effective.</p></li>
+</ul>
+</section>
+<section id="regression-testing">
+<h3>6. Regression Testing<a class="headerlink" href="#regression-testing" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Perform regression tests:</strong> Run tests on    previously tested areas to ensure that new changes or bug fixes have not introduced new problems. We have a separate document for the CI        runs for regression. It is explained in detail in that document.</p></li>
+<li><p>All new test cases should be added to CI workflows and executed in daily runs.
+Refer to the CI regression document for details.</p></li>
+</ul>
+</section>
+<section id="test-reporting">
+<h3>7. Test Reporting<a class="headerlink" href="#test-reporting" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Generate test reports:</strong> Summarize the testing results, including the number of tests executed, the number of failed cases, and the overall test coverage. We use allure reports, and it is integrated in our test suite and generated in the daily CI runs.</p></li>
+<li><p><strong>Analyze test results:</strong> Identify areas for improvement in the software or the testing process.</p></li>
+<li><p><strong>Allure reports</strong>:
+Integrated with the test suite and auto-generated in daily CI runs.</p></li>
+<li><p><strong>Analyze results</strong>:
+Identify improvement areas in the product and testing process.</p></li>
+</ul>
+</section>
+<section id="release-testing">
+<h3>8. Release Testing<a class="headerlink" href="#release-testing" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Perform final testing:</strong> Conduct a final round of testing before the software is released to production.</p></li>
+</ul>
+</section>
+<section id="post-release-activities">
+<h3>9. Post-Release Activities<a class="headerlink" href="#post-release-activities" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Monitor production issues:</strong>        Track any issues reported by end-users after the software is released.</p></li>
+<li><p><strong>Conduct post-release testing:</strong> Perform additional testing to identify any issues that were not discovered during the initial testing phases.</p></li>
+<li><p><strong>Continuously improve the testing process:</strong>         Analyze the results of each testing cycle to identify areas for         improvement and refine the testing approach for future projects.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Rajkumar Subbiaya.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
