@@ -91,7 +91,7 @@ When L2 identifies the need for a new feature, they submit a feature request alo
 
 
 **Improvements (Config Changes, Velocity/Productivity Enhancements)**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 L2 identifies areas for improvement, such as system tuning, process automation, or optimizations that enhance performance and productivity. Once an improvement is proposed, the RTE or Product Manager reviews its feasibility, potential impact, and alignment with ongoing priorities. If approved, the implementation is assigned to either the DevOps team or the development team, ensuring that the necessary changes are executed efficiently to enhance system reliability and operational efficiency. 
 
@@ -105,7 +105,7 @@ Dev Team Perspective: Execution & Responsibility
 The RTE or Product Manager assigns tasks to developers based on priority, ensuring that the most critical issues and enhancements are addressed first. Since these tasks are scheduled for release in the next software iteration, careful planning and adherence to timelines are essential to maintain a smooth development cycle and meet delivery commitments. 
 
 **Developer's Responsibilities**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - **Timely Completion**: Once assigned, developers are expected to complete tasks within the planned sprint.
 
 - **Proactive Communication**:
@@ -149,7 +149,7 @@ Development Process: Handling Bugs Efficiently
 The development process for handling bugs follows a structured workflow:
 
 **Task Assignment & Ownership**
-------------------------------
+-------------------------------
 Bugs are assigned to developers through Azure tickets, typically by the Scrum team. While senior developers may sometimes assign tasks, this should ideally be avoided to maintain a standardized process. Once a bug is assigned, the developer must change the work item status to "In Progress" to indicate active development. 
 
 **Identifying & Reproducing the Bug**

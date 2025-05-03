@@ -9,7 +9,7 @@
   <title>CI RUNS &mdash; ReadTheDocs Demo  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a7456d8d" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=95bb6376" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -46,8 +46,14 @@
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">CI RUNS</a><ul>
 <li><a class="reference internal" href="#ci-run-for-specific-suite">CI Run for Specific Suite:</a><ul>
+<li><a class="reference internal" href="#initiate-integration-e2e-test">1. Initiate integration/E2E test:</a><ul>
 <li><a class="reference internal" href="#steps-to-run-ci-workflow">Steps to Run CI Workflow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ci-run-for-nightly-tests">2. CI Run for Nightly Tests</a></li>
+<li><a class="reference internal" href="#ci-run-for-confidence-tests">3. CI Run for Confidence tests:</a></li>
 <li><a class="reference internal" href="#ci-run-for-performance-tests">4. CI Run for Performance tests:</a></li>
+<li><a class="reference internal" href="#add-every-suite-in-run-all-nightly-file-to-run-in-daily-ci-while-adding-a-new-suite-everytime">5. Add every suite in run_all_nightly file to run in daily ci while adding a new suite everytime.</a></li>
 </ul>
 </li>
 </ul>
@@ -82,9 +88,11 @@
 <h1>CI RUNS<a class="headerlink" href="#ci-runs" title="Link to this heading"></a></h1>
 <section id="ci-run-for-specific-suite">
 <h2>CI Run for Specific Suite:<a class="headerlink" href="#ci-run-for-specific-suite" title="Link to this heading"></a></h2>
-<ol class="arabic simple">
-<li><p>Initiate integration/E2E test, Initiate test run for specific suite to ensure that the test suite is passing in devel or release branch or in feature branch</p></li>
-</ol>
+<section id="initiate-integration-e2e-test">
+<h3>1. Initiate integration/E2E test:<a class="headerlink" href="#initiate-integration-e2e-test" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Initiate test run for specific suite to ensure that the test suite is passing in devel or release branch or in feature branch</p>
+</div></blockquote>
 <p>Navigate to Actions tab in sootballs_test repo</p>
 <a class="reference internal image-reference" href="_images/pic1.png"><img alt="CI Run" class="align-center" src="_images/pic1.png" style="width: 600px;" />
 </a>
@@ -92,7 +100,7 @@
 <a class="reference internal image-reference" href="_images/pic2.png"><img alt="CI Run" class="align-center" src="_images/pic2.png" style="width: 600px;" />
 </a>
 <br><br><section id="steps-to-run-ci-workflow">
-<h3>Steps to Run CI Workflow<a class="headerlink" href="#steps-to-run-ci-workflow" title="Link to this heading"></a></h3>
+<h4>Steps to Run CI Workflow<a class="headerlink" href="#steps-to-run-ci-workflow" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p>Click run_workflow icon and fill the details like below,</p></li>
 <li><p>Use workflow from –&gt; this is always devel only. We don’t have to change this</p></li>
@@ -125,12 +133,17 @@
 </a>
 <br><br><a class="reference internal image-reference" href="_images/pic8.png"><img alt="CI Run" class="align-center" src="_images/pic8.png" style="width: 600px;" />
 </a>
-<br><br><p><strong>2. CI Run for Nightly Tests</strong></p>
+<br><br></section>
+</section>
+<section id="ci-run-for-nightly-tests">
+<h3>2. CI Run for Nightly Tests<a class="headerlink" href="#ci-run-for-nightly-tests" title="Link to this heading"></a></h3>
 <p>Navigate to the Nightly tests tab and click workflow.
 Run the workflow in whichever branch we need.</p>
 <a class="reference internal image-reference" href="_images/pic9.png"><img alt="CI Run" class="align-center" src="_images/pic9.png" style="width: 600px;" />
 </a>
-<br><br><p><strong>3. CI Run for Confidence tests:</strong></p>
+<br><br></section>
+<section id="ci-run-for-confidence-tests">
+<h3>3. CI Run for Confidence tests:<a class="headerlink" href="#ci-run-for-confidence-tests" title="Link to this heading"></a></h3>
 <p>Navigate to Confidence tests tab and click workflow. In rr_sootballs reference we can give in which branch of rr_sootballs we are going to run the suite. In sootballs test, we can give in which branch of sootballs_tests we are going to run the suite.</p>
 <a class="reference internal image-reference" href="_images/pic10.png"><img alt="CI Run" class="align-center" src="_images/pic10.png" style="width: 600px;" />
 </a>
@@ -140,9 +153,9 @@ Run the workflow in whichever branch we need.</p>
 <p>Navigate to Performance tests tab and click workflow. In rr_sootballs reference we can give in which branch of rr_sootballs we are going to run the suite. In sootballs test, we can give in which branch of sootballs_tests we are going to run the suite.</p>
 <a class="reference internal image-reference" href="_images/pic11.png"><img alt="CI Run" class="align-center" src="_images/pic11.png" style="width: 600px;" />
 </a>
-<br><br><ol class="arabic simple" start="5">
-<li><p>Add every suite in run_all_nightly file to run in daily ci while adding a new suite everytime.</p></li>
-</ol>
+<br><br></section>
+<section id="add-every-suite-in-run-all-nightly-file-to-run-in-daily-ci-while-adding-a-new-suite-everytime">
+<h3>5. Add every suite in run_all_nightly file to run in daily ci while adding a new suite everytime.<a class="headerlink" href="#add-every-suite-in-run-all-nightly-file-to-run-in-daily-ci-while-adding-a-new-suite-everytime" title="Link to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/pic12.png"><img alt="CI Run" class="align-center" src="_images/pic12.png" style="width: 600px;" />
 </a>
 <br><br></section>

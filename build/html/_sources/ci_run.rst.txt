@@ -3,9 +3,11 @@ CI RUNS
 =======
 
 CI Run for Specific Suite:
-==========================
+--------------------------
 
-1. Initiate integration/E2E test, Initiate test run for specific suite to ensure that the test suite is passing in devel or release branch or in feature branch
+1. Initiate integration/E2E test:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Initiate test run for specific suite to ensure that the test suite is passing in devel or release branch or in feature branch
 
 Navigate to Actions tab in sootballs_test repo 
 
@@ -31,7 +33,7 @@ Navigate to integration/E2E test tab in Action module
 
 
 Steps to Run CI Workflow
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click run_workflow icon and fill the details like below,
 
@@ -108,8 +110,8 @@ Steps to Run CI Workflow
 
     <br><br>
 
-**2. CI Run for Nightly Tests**
-
+2. CI Run for Nightly Tests
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Navigate to the Nightly tests tab and click workflow.  
 Run the workflow in whichever branch we need.
@@ -124,7 +126,8 @@ Run the workflow in whichever branch we need.
     <br><br>
 
 
-**3. CI Run for Confidence tests:**
+3. CI Run for Confidence tests:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Navigate to Confidence tests tab and click workflow. In rr_sootballs reference we can give in which branch of rr_sootballs we are going to run the suite. In sootballs test, we can give in which branch of sootballs_tests we are going to run the suite. 
 
@@ -137,8 +140,8 @@ Navigate to Confidence tests tab and click workflow. In rr_sootballs reference w
 
     <br><br>
 
-4. CI Run for Performance tests: 
---------------------------------
+4. CI Run for Performance tests:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Navigate to Performance tests tab and click workflow. In rr_sootballs reference we can give in which branch of rr_sootballs we are going to run the suite. In sootballs test, we can give in which branch of sootballs_tests we are going to run the suite. 
 
@@ -152,6 +155,7 @@ Navigate to Performance tests tab and click workflow. In rr_sootballs reference 
     <br><br>
 
 5. Add every suite in run_all_nightly file to run in daily ci while adding a new suite everytime.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ci_run_pic/pic12.png
    :alt: CI Run
