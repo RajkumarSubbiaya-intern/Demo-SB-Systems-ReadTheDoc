@@ -56,7 +56,21 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#process-to-do-on-ci-run-failures">PROCESS TO DO on CI RUN FAILURES</a></li>
-<li><a class="reference internal" href="#process-to-write-test-case">PROCESS TO WRITE TEST CASE</a></li>
+<li><a class="reference internal" href="#process-to-write-test-case">PROCESS TO WRITE TEST CASE</a><ul>
+<li><a class="reference internal" href="#types-of-tasks-in-azure-devops-sprint-board-management">Types of Tasks in Azure devops - sprint board management</a><ul>
+<li><a class="reference internal" href="#requirement-analysis">1. Requirement Analysis</a></li>
+<li><a class="reference internal" href="#test-planning-design">2. Test Planning &amp; Design</a></li>
+<li><a class="reference internal" href="#test-environment-setup">3. Test Environment Setup</a></li>
+<li><a class="reference internal" href="#test-execution">4. Test Execution</a></li>
+<li><a class="reference internal" href="#defect-tracking-retesting">5. Defect Tracking &amp; Retesting</a></li>
+<li><a class="reference internal" href="#regression-testing">6. Regression Testing</a></li>
+<li><a class="reference internal" href="#test-reporting">7. Test Reporting</a></li>
+<li><a class="reference internal" href="#release-testing">8. Release Testing</a></li>
+<li><a class="reference internal" href="#post-release-activities">9. Post-Release Activities</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
         </div>
@@ -261,9 +275,13 @@ link_type=LinkType.TEST_CASE,</p>
 <p>)</p>
 </div></blockquote>
 <hr class="docutils" />
+<section id="types-of-tasks-in-azure-devops-sprint-board-management">
+<h2>Types of Tasks in Azure devops - sprint board management<a class="headerlink" href="#types-of-tasks-in-azure-devops-sprint-board-management" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/pic81.png"><img alt="Azure Devops Tasks" class="align-center" src="_images/pic81.png" style="width: 600px;" />
 </a>
-<br><br><ul class="simple">
+<br><br><section id="requirement-analysis">
+<h3>1. Requirement Analysis<a class="headerlink" href="#requirement-analysis" title="Link to this heading"></a></h3>
+<ul class="simple">
 <li><p><strong>Understand the software</strong>:
 Review the feature documents, user stories, and other relevant documentation to understand what the software is supposed to do.
 Example: We will get the feature request in Azure DevOps.</p></li>
@@ -275,6 +293,9 @@ Determine what needs to be tested and identify the scope.</p></li>
 <li><p><strong>Create QA user story</strong>:
 Create a QA user story for the requirement user story in Sootballs Dashboard for the release if it’s a feature request user story. Outline the testing scope whichever feasible to, approach, resources, schedule, and deliverables.</p></li>
 </ul>
+</section>
+<section id="test-planning-design">
+<h3>2. Test Planning &amp; Design<a class="headerlink" href="#test-planning-design" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Design test cases</strong>:
 Create detailed test cases that cover all functional, End to end tests as well as edge cases of the feature or the fixes provided for bugs.</p>
@@ -290,10 +311,16 @@ Develop higher-level scenarios that represent real-world usage of the feature by
 <li><p><strong>Update task in Azure DevOps</strong>:
 Update the task created in azure devops for that test plan. Ensure that the task is linked to the QA user story which is linked to the requirement user story in Sootballs dashboard.</p></li>
 </ul>
+</section>
+<section id="test-environment-setup">
+<h3>3. Test Environment Setup<a class="headerlink" href="#test-environment-setup" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Prepare the environment</strong>:
 Set up the necessary environment by updating the correct git version, pulling images hardware, software, and network configurations, environment variables if any and set up the environment.</p></li>
 </ul>
+</section>
+<section id="test-execution">
+<h3>4. Test Execution<a class="headerlink" href="#test-execution" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Execute test cases</strong>:
 Perform manual or automated tests according to the test plan.</p></li>
@@ -304,17 +331,26 @@ Report any bugs found during testing using the “Bug” Workitemtype in  Azured
 <li><p>Link the manual test case and automated test case if  automation completed to the bug in “Steps to reproduce”</p></li>
 <li><p>If we have the automated test case failing, skip the test     case by using pytest skip test and also link the azure bug workitemtype in git and make a commit. Once the defect is fixed, we need to re-test this test case and again make a PR.</p></li>
 </ul>
+</section>
+<section id="defect-tracking-retesting">
+<h3>5. Defect Tracking &amp; Retesting<a class="headerlink" href="#defect-tracking-retesting" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Track and manage defects</strong>:
 Monitor the status of reported defects and work with developers to resolve them.</p></li>
 <li><p><strong>Retest fixed defects</strong>:
 Re-execute the affected test cases to verify that the fixes are effective.</p></li>
 </ul>
+</section>
+<section id="regression-testing">
+<h3>6. Regression Testing<a class="headerlink" href="#regression-testing" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Perform regression tests:</strong> Run tests on    previously tested areas to ensure that new changes or bug fixes have not introduced new problems. We have a separate document for the CI        runs for regression. It is explained in detail in that document.</p></li>
 <li><p>All new test cases should be added to CI workflows and executed in daily runs.
 Refer to the CI regression document for details.</p></li>
 </ul>
+</section>
+<section id="test-reporting">
+<h3>7. Test Reporting<a class="headerlink" href="#test-reporting" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Generate test reports:</strong> Summarize the testing results, including the number of tests executed, the number of failed cases, and the overall test coverage. We use allure reports, and it is integrated in our test suite and generated in the daily CI runs.</p></li>
 <li><p><strong>Analyze test results:</strong> Identify areas for improvement in the software or the testing process.</p></li>
@@ -323,14 +359,22 @@ Integrated with the test suite and auto-generated in daily CI runs.</p></li>
 <li><p><strong>Analyze results</strong>:
 Identify improvement areas in the product and testing process.</p></li>
 </ul>
+</section>
+<section id="release-testing">
+<h3>8. Release Testing<a class="headerlink" href="#release-testing" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Perform final testing:</strong> Conduct a final round of testing before the software is released to production.</p></li>
 </ul>
+</section>
+<section id="post-release-activities">
+<h3>9. Post-Release Activities<a class="headerlink" href="#post-release-activities" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Monitor production issues:</strong>        Track any issues reported by end-users after the software is released.</p></li>
 <li><p><strong>Conduct post-release testing:</strong> Perform additional testing to identify any issues that were not discovered during the initial testing phases.</p></li>
 <li><p><strong>Continuously improve the testing process:</strong>         Analyze the results of each testing cycle to identify areas for         improvement and refine the testing approach for future projects.</p></li>
 </ul>
+</section>
+</section>
 </section>
 
 

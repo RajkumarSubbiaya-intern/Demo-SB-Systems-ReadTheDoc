@@ -18,6 +18,7 @@ rst_prolog = """
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
+extensions = ['sphinx.ext.autosectionlabel']
 
 
 html_logo = "_static/rapyuta_logo.png"  # or .svg

@@ -244,6 +244,7 @@ The DI Development Process provides a clear onboarding and workflow guide for ne
 
 For the complete process document, refer to:  
 `DI Development Process.docx <https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/SB_Systems/Process_Docs/DI%20Development%20Process.docx?d=w05b46364b4aa4cd5af2d36fb92f1f1d1&csf=1&web=1&e=nSvcFc>`_
+:doc:`DI Process <di_process>`
 
 UI Development Process (Frontend)
 =================================
