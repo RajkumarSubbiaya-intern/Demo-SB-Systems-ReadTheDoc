@@ -1,7 +1,7 @@
 # -- Project information -----------------------------------------------------
-project = 'ReadTheDocs Demo'
-copyright = '2025, Rajkumar Subbiaya'
-author = 'Rajkumar Subbiaya'
+project = 'rr_sb_sysytem_docs'
+copyright = '2025, Rapyuta Robotics'
+author = 'Rapyuta Robotics'
 
 # -- General configuration ---------------------------------------------------
 extensions = []
@@ -26,5 +26,5 @@ html_logo = "_static/rapyuta_logo.png"  # or .svg
 # Optional: Show only the logo (no project name text)
 html_theme_options = {
     "logo_only": True,
-    "display_version": False,
+    "display_version": False
 }

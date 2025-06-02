@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L2 to Dev Team Process Guide &mdash; rr_sb_sysytem_docs  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=95bb6376" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dev Team Perspective: Execution &amp; Responsibility" href="dev_team.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/rapyuta_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">L2 to Dev Team Process Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#issue-cases-identification-categorization">Issue/Cases Identification &amp; Categorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issue-cases-analysis-guide-docs">Issue/Cases Analysis Guide Docs:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issue-case-routing-documentation">Issue/Case Routing &amp; Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bugs-from-reporting-to-completion"><strong>Bugs (From Reporting to Completion)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#feature-requests"><strong>Feature Requests</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#improvements-config-changes-velocity-productivity-enhancements"><strong>Improvements (Config Changes, Velocity/Productivity Enhancements)</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_team.html">Dev Team Perspective: Execution &amp; Responsibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Management &amp; Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development Process:</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="di_process.html">DI Development Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui_process.html">UI Development Process (Frontend)</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rte.html">RTE Process: Managing Release Flow &amp; Coordination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="last.html">Development &amp; Release Process: Ensuring a Smooth Deployment</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="systems.html">QA Process: Feature &amp; Bug Validation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rr_sb_sysytem_docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">L2 to Dev Team Process Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/l2todev.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="l2-to-dev-team-process-guide">
+<h1>L2 to Dev Team Process Guide<a class="headerlink" href="#l2-to-dev-team-process-guide" title="Link to this heading"></a></h1>
+<p>This guide outlines the structured flow of issues/cases from the <strong>L2 support team</strong> to the <strong>development team</strong>, ensuring smooth handling, tracking, and resolution.</p>
+<section id="issue-cases-identification-categorization">
+<h2>Issue/Cases Identification &amp; Categorization<a class="headerlink" href="#issue-cases-identification-categorization" title="Link to this heading"></a></h2>
+<p>L2 support receives issues/cases from L1, monitoring systems, Glory Team or directly from customer. L2 debugging begins with checking logs, assessing system health, and reviewing previous occurrences to identify patterns or recurring issues. If the problem aligns with known resolutions, L2 applies quick fixes such as restarting services, adjusting configurations, or updating database entries. However, if the issue requires code changes or deeper investigation, it is escalated to the development team. Before escalation, L2 ensures that all necessary details, including logs, steps to reproduce, and environmental information, are thoroughly documented in Azure tickets to facilitate efficient troubleshooting by the developers.</p>
+</section>
+<section id="issue-cases-analysis-guide-docs">
+<h2>Issue/Cases Analysis Guide Docs:<a class="headerlink" href="#issue-cases-analysis-guide-docs" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/01_onboarding/SB_Systems_Docs/Cases%20Handling%20Handbook%20-%20US.docx?d=w9e84adfb07b54685b59c98310bb4aba4&amp;csf=1&amp;web=1&amp;e=ZqRm3q">Cases Handling Handbook - US.docx</a></p></li>
+<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/01_onboarding/SB_Systems_Docs/Issue%20Handling%20Handbook_v1.0.docx?d=wf8e2d27a4a3b454db3bb7e5eb1edf67b&amp;csf=1&amp;web=1&amp;e=oa9nAA">Issue Handling Handbook_v1.0.docx</a></p></li>
+<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/01_onboarding/SB_Systems_Docs/U.S%20CASES%20CHECKLIST.docx?d=wa5700ab88f77446fb40382d2d7438663&amp;csf=1&amp;web=1&amp;e=Iq5tcO">U.S CASES CHECKLIST.docx</a></p></li>
+</ul>
+<p>The issue/cases are then categorized into:</p>
+<ul class="simple">
+<li><p><strong>Bugs -</strong> Functional defects requiring code fixes.</p></li>
+<li><p><strong>Feature Requests -</strong> New functionalities requested by users or stakeholders.</p></li>
+<li><p><strong>Improvements -</strong> Configuration changes or optimizations to enhance velocity, productivity, or product stability.</p></li>
+</ul>
+</section>
+<section id="issue-case-routing-documentation">
+<h2>Issue/Case Routing &amp; Documentation<a class="headerlink" href="#issue-case-routing-documentation" title="Link to this heading"></a></h2>
+<p>Each category follows a distinct workflow:</p>
+<section id="bugs-from-reporting-to-completion">
+<h3><strong>Bugs (From Reporting to Completion)</strong><a class="headerlink" href="#bugs-from-reporting-to-completion" title="Link to this heading"></a></h3>
+<p>When L2 identifies a bug, they log it in the tracking system (Azure) with a detailed issue description, steps to reproduce, relevant logs, screenshots, and environment details to ensure clarity for the development team. Once reported, the RTE evaluates its priority—categorizing it as critical, major, or minor—before scheduling it in an upcoming sprint based on its impact. Assigned developers then begin investigating and resolving the bug, ensuring the fix undergoes thorough peer review and testing before deployment. Once the fix is integrated into the release pipeline, L2 performs final validation to confirm that the issue is resolved before marking it as closed.</p>
+<dl class="simple">
+<dt><strong>Detailed Bug Management Process:</strong></dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/s/04_chennai/EQswy4MsZqxKjchI1x9KbDgBtD4serf9jqcdqNX4NWdLNQ?e=qMmNen">How to create Bug ticket docs</a></p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="feature-requests">
+<h3><strong>Feature Requests</strong><a class="headerlink" href="#feature-requests" title="Link to this heading"></a></h3>
+<p>When L2 identifies the need for a new feature, they submit a feature request along with a justification and impact assessment, outlining how the enhancement would improve functionality or user experience. The Product Manager and RTE then review the request to evaluate its feasibility, alignment with business goals, and priority within the development roadmap. If approved, the feature request is added to the backlog and scheduled for implementation in an upcoming sprint, ensuring it is developed in a structured and timely manner.</p>
+<dl class="simple">
+<dt><strong>Feature Request Workflow:</strong></dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/s/04_chennai/ETpMGAUXEJtCkegojOtbd2sBlOYvHWEMGzlNHch0NlCkkQ?e=8RKtja">How to create Feature request docs</a></p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="improvements-config-changes-velocity-productivity-enhancements">
+<h3><strong>Improvements (Config Changes, Velocity/Productivity Enhancements)</strong><a class="headerlink" href="#improvements-config-changes-velocity-productivity-enhancements" title="Link to this heading"></a></h3>
+<p>L2 identifies areas for improvement, such as system tuning, process automation, or optimizations that enhance performance and productivity. Once an improvement is proposed, the RTE or Product Manager reviews its feasibility, potential impact, and alignment with ongoing priorities. If approved, the implementation is assigned to either the DevOps team or the development team, ensuring that the necessary changes are executed efficiently to enhance system reliability and operational efficiency.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dev_team.html" class="btn btn-neutral float-right" title="Dev Team Perspective: Execution &amp; Responsibility" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Rapyuta Robotics.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

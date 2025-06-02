@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexus Book: The Systems Team Process &mdash; ReadTheDocs Demo  documentation</title>
+  <title>Nexus Book: The Systems Team Process &mdash; rr_sb_sysytem_docs  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=95bb6376" />
@@ -19,7 +19,8 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="intro.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,89 +43,33 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Nexus Book: The Systems Team Process</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#sb-systems-architecture-overview">SB- Systems Architecture Overview</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l2todev.html">L2 to Dev Team Process Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev_team.html">Dev Team Perspective: Execution &amp; Responsibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Management &amp; Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development Process:</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#l2-to-dev-team-process-guide">L2 to Dev Team Process Guide</a><ul>
-<li><a class="reference internal" href="#issue-cases-identification-categorization">Issue/Cases Identification &amp; Categorization</a></li>
-<li><a class="reference internal" href="#issue-cases-analysis-guide-docs">Issue/Cases Analysis Guide Docs:</a></li>
-<li><a class="reference internal" href="#issue-case-routing-documentation">Issue/Case Routing &amp; Documentation</a><ul>
-<li><a class="reference internal" href="#bugs-from-reporting-to-completion"><strong>Bugs (From Reporting to Completion)</strong></a></li>
-<li><a class="reference internal" href="#feature-requests"><strong>Feature Requests</strong></a></li>
-<li><a class="reference internal" href="#improvements-config-changes-velocity-productivity-enhancements"><strong>Improvements (Config Changes, Velocity/Productivity Enhancements)</strong></a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="di_process.html">DI Development Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui_process.html">UI Development Process (Frontend)</a></li>
 </ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rte.html">RTE Process: Managing Release Flow &amp; Coordination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="last.html">Development &amp; Release Process: Ensuring a Smooth Deployment</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#dev-team-perspective-execution-responsibility">Dev Team Perspective: Execution &amp; Responsibility</a><ul>
-<li><a class="reference internal" href="#task-assignment-planning"><strong>Task Assignment &amp; Planning</strong></a><ul>
-<li><a class="reference internal" href="#developer-s-responsibilities"><strong>Developer’s Responsibilities</strong></a></li>
-<li><a class="reference internal" href="#collaboration-escalation"><strong>Collaboration &amp; Escalation</strong></a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="systems.html">QA Process: Feature &amp; Bug Validation</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#release-management-deployment">Release Management &amp; Deployment</a><ul>
-<li><a class="reference internal" href="#bugs-lifecycle-continuous-improvement">Bugs Lifecycle &amp; Continuous Improvement</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#development-process-handling-bugs-efficiently">Development Process: Handling Bugs Efficiently</a><ul>
-<li><a class="reference internal" href="#task-assignment-ownership"><strong>Task Assignment &amp; Ownership</strong></a><ul>
-<li><a class="reference internal" href="#identifying-reproducing-the-bug"><strong>Identifying &amp; Reproducing the Bug</strong></a></li>
-<li><a class="reference internal" href="#bug-fixing-code-integration"><strong>Bug Fixing &amp; Code Integration</strong></a></li>
-<li><a class="reference internal" href="#merging-backporting"><strong>Merging &amp; Backporting</strong></a></li>
-<li><a class="reference internal" href="#testing-validation"><strong>Testing &amp; Validation</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#development-process-handling-features">Development Process: Handling Features</a><ul>
-<li><a class="reference internal" href="#task-assignment-understanding-requirements">Task Assignment &amp; Understanding Requirements</a><ul>
-<li><a class="reference internal" href="#design-collaboration">Design &amp; Collaboration</a></li>
-<li><a class="reference internal" href="#development-code-integration">Development &amp; Code Integration</a></li>
-<li><a class="reference internal" href="#id1">Testing &amp; Validation</a></li>
-<li><a class="reference internal" href="#handling-issues">Handling Issues</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#di-development-process">DI Development Process</a></li>
-<li><a class="reference internal" href="#ui-development-process-frontend">UI Development Process (Frontend)</a></li>
-<li><a class="reference internal" href="#qa-process-feature-bug-validation">QA Process: Feature &amp; Bug Validation</a><ul>
-<li><a class="reference internal" href="#work-assignment-ticket-creation">Work Assignment &amp; Ticket Creation</a><ul>
-<li><a class="reference internal" href="#testing-scope-approach">Testing Scope &amp; Approach</a></li>
-<li><a class="reference internal" href="#execution-reporting">Execution &amp; Reporting</a></li>
-<li><a class="reference internal" href="#continuous-integration-release-testing">Continuous Integration &amp; Release Testing</a></li>
-<li><a class="reference internal" href="#production-bug-testing-rca">Production Bug Testing &amp; RCA</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#rte-process-managing-release-flow-coordination">RTE Process: Managing Release Flow &amp; Coordination</a><ul>
-<li><a class="reference internal" href="#feature-bug-management">Feature &amp; Bug Management</a><ul>
-<li><a class="reference internal" href="#regression-testing-bug-loops">Regression Testing &amp; Bug Loops</a></li>
-<li><a class="reference internal" href="#rc-promotion-production-deployment">RC Promotion &amp; Production Deployment</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#development-release-process-ensuring-a-smooth-deployment">Development &amp; Release Process: Ensuring a Smooth Deployment</a><ul>
-<li><a class="reference internal" href="#reference-documents-external-links">Reference Documents &amp; External Links</a></li>
-</ul>
-</li>
-</ul>
-</div>
+
         </div>
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">ReadTheDocs Demo</a>
+          <a href="#">rr_sb_sysytem_docs</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -144,443 +89,159 @@
              
   <section id="nexus-book-the-systems-team-process">
 <h1>Nexus Book: The Systems Team Process<a class="headerlink" href="#nexus-book-the-systems-team-process" title="Link to this heading"></a></h1>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
-<p>This book defines the essential processes, tools, and best practices that empower teams to collaborate seamlessly, drive efficiency, and scale with confidence. This book is designed to:</p>
-<ul class="simple">
-<li><p><strong>Standardize Processes:</strong> Define clear workflows for each squad to ensure consistency.</p></li>
-<li><p><strong>Improve Collaboration:</strong> Highlight inter-team dependencies and best practices for smooth integration.</p></li>
-<li><p><strong>Enhance Knowledge Sharing:</strong> Provide in-depth technical and process documentation for current and future team members.</p></li>
-<li><p><strong>Optimize Performance:</strong> Define measurable KPIs and continuous improvement strategies.</p></li>
+<p>Welcome to the <strong>Systems Team Handbook</strong>! This book serves as a comprehensive guide for the <strong>Systems Team</strong>, detailing our processes, tools, and best practices. It is designed to help both new and existing team members understand our workflows and contribute effectively to our mission of delivering high-quality systems solutions.</p>
+<p>This book is intended for all members of the <strong>Systems Team</strong>, including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Fresher to Systems Team</strong>: New team members who are just starting their journey with us.</p></li>
+<li><p><strong>Existing Team Members</strong>: Current team members looking to refresh their knowledge or understand new processes.</p></li>
+<li><p><strong>Stakeholders</strong>: Individuals interested in understanding how the Systems Team operates and collaborates with other teams.</p></li>
 </ul>
-<p>Whether you’re an existing team member or a <strong>Fresher to Systems Team</strong>, this book will help you navigate the <strong>System Excellence framework</strong> and contribute effectively.</p>
-</section>
-<section id="sb-systems-architecture-overview">
-<h2>SB- Systems Architecture Overview<a class="headerlink" href="#sb-systems-architecture-overview" title="Link to this heading"></a></h2>
-<img alt="Systems Team Overview" class="align-center" src="_images/systems_team_overview.png" />
-<br><br><p>Customers will raise queries and report issues encountered during daily product usage. These requests are directed to either the <strong>Glory team</strong> or <strong>Field Engineers</strong> through issue tickets in <strong>Azure</strong>, as detailed in this document.</p>
-<p>Once a ticket is raised, the <strong>Support Team</strong> will review and categorize it into appropriate task types, such as <strong>issues/cases</strong>, <strong>bugs</strong>, or <strong>feature requests</strong>, ensuring a structured approach to resolution.</p>
-<p>The <strong>Support Team</strong> will handle and resolve general <strong>issues/cases</strong>. However, <strong>bugs</strong> and <strong>feature requests</strong> will be escalated by creating tickets for the <strong>Development Team</strong>, ensuring they are addressed systematically and integrated into the development pipeline.</p>
-<p>The <strong>Development Team</strong> will work on fixing reported <strong>bugs</strong>, updating the <strong>software</strong>, and implementing <strong>new features</strong>. Once the development is complete, the updated software will be sent to the <strong>QA Team</strong> for thorough testing to ensure functionality, stability, and compliance with requirements.</p>
-<p>Once the <strong>QA Team</strong> has tested and validated the updates, the release will be handed over to the <strong>RTE (Release Train Engineer)</strong>, who will ensure proper alignment and readiness for deployment.</p>
-<p>If any issues/cases are identified during this stage, the changes will go through the necessary iteration loop for fixes and retesting. Once cleared, the final release will be deployed by the <strong>ROPS Team</strong> or <strong>Field Engineers</strong>, ensuring a smooth rollout to production.</p>
-<p>All necessary process documents detailing this overall flow are provided below. These documents explain:</p>
-<ul class="simple">
-<li><p><strong>Why</strong> each process is necessary</p></li>
-<li><p><strong>How</strong> each process is executed</p></li>
-<li><p><strong>Which tools</strong> are used to achieve seamless implementation</p></li>
-</ul>
-<p>Here’s a refined, structured guide integrating your notes into a comprehensive <strong>L2 to Dev Team Process Flow:</strong></p>
-</section>
-</section>
-<section id="l2-to-dev-team-process-guide">
-<h1>L2 to Dev Team Process Guide<a class="headerlink" href="#l2-to-dev-team-process-guide" title="Link to this heading"></a></h1>
-<p>This guide outlines the structured flow of issues/cases from the <strong>L2 support team</strong> to the <strong>development team</strong>, ensuring smooth handling, tracking, and resolution.</p>
-<section id="issue-cases-identification-categorization">
-<h2>Issue/Cases Identification &amp; Categorization<a class="headerlink" href="#issue-cases-identification-categorization" title="Link to this heading"></a></h2>
-<p>L2 support receives issues/cases from L1, monitoring systems, Glory Team or directly from customer. L2 debugging begins with checking logs, assessing system health, and reviewing previous occurrences to identify patterns or recurring issues. If the problem aligns with known resolutions, L2 applies quick fixes such as restarting services, adjusting configurations, or updating database entries. However, if the issue requires code changes or deeper investigation, it is escalated to the development team. Before escalation, L2 ensures that all necessary details, including logs, steps to reproduce, and environmental information, are thoroughly documented in Azure tickets to facilitate efficient troubleshooting by the developers.</p>
-</section>
-<section id="issue-cases-analysis-guide-docs">
-<h2>Issue/Cases Analysis Guide Docs:<a class="headerlink" href="#issue-cases-analysis-guide-docs" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/01_onboarding/SB_Systems_Docs/Cases%20Handling%20Handbook%20-%20US.docx?d=w9e84adfb07b54685b59c98310bb4aba4&amp;csf=1&amp;web=1&amp;e=ZqRm3q">Cases Handling Handbook - US.docx</a></p></li>
-<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/01_onboarding/SB_Systems_Docs/Issue%20Handling%20Handbook_v1.0.docx?d=wf8e2d27a4a3b454db3bb7e5eb1edf67b&amp;csf=1&amp;web=1&amp;e=oa9nAA">Issue Handling Handbook_v1.0.docx</a></p></li>
-<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/01_onboarding/SB_Systems_Docs/U.S%20CASES%20CHECKLIST.docx?d=wa5700ab88f77446fb40382d2d7438663&amp;csf=1&amp;web=1&amp;e=Iq5tcO">U.S CASES CHECKLIST.docx</a></p></li>
-</ul>
-<p>The issue/cases are then categorized into:</p>
-<ul class="simple">
-<li><p><strong>Bugs -</strong> Functional defects requiring code fixes.</p></li>
-<li><p><strong>Feature Requests -</strong> New functionalities requested by users or stakeholders.</p></li>
-<li><p><strong>Improvements -</strong> Configuration changes or optimizations to enhance velocity, productivity, or product stability.</p></li>
-</ul>
-</section>
-<section id="issue-case-routing-documentation">
-<h2>Issue/Case Routing &amp; Documentation<a class="headerlink" href="#issue-case-routing-documentation" title="Link to this heading"></a></h2>
-<p>Each category follows a distinct workflow:</p>
-<section id="bugs-from-reporting-to-completion">
-<h3><strong>Bugs (From Reporting to Completion)</strong><a class="headerlink" href="#bugs-from-reporting-to-completion" title="Link to this heading"></a></h3>
-<p>When L2 identifies a bug, they log it in the tracking system (Azure) with a detailed issue description, steps to reproduce, relevant logs, screenshots, and environment details to ensure clarity for the development team. Once reported, the RTE evaluates its priority—categorizing it as critical, major, or minor—before scheduling it in an upcoming sprint based on its impact. Assigned developers then begin investigating and resolving the bug, ensuring the fix undergoes thorough peer review and testing before deployment. Once the fix is integrated into the release pipeline, L2 performs final validation to confirm that the issue is resolved before marking it as closed.</p>
-<dl class="simple">
-<dt><strong>Detailed Bug Management Process:</strong></dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/s/04_chennai/EQswy4MsZqxKjchI1x9KbDgBtD4serf9jqcdqNX4NWdLNQ?e=qMmNen">How to create Bug ticket docs</a></p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="feature-requests">
-<h3><strong>Feature Requests</strong><a class="headerlink" href="#feature-requests" title="Link to this heading"></a></h3>
-<p>When L2 identifies the need for a new feature, they submit a feature request along with a justification and impact assessment, outlining how the enhancement would improve functionality or user experience. The Product Manager and RTE then review the request to evaluate its feasibility, alignment with business goals, and priority within the development roadmap. If approved, the feature request is added to the backlog and scheduled for implementation in an upcoming sprint, ensuring it is developed in a structured and timely manner.</p>
-<dl class="simple">
-<dt><strong>Feature Request Workflow:</strong></dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/s/04_chennai/ETpMGAUXEJtCkegojOtbd2sBlOYvHWEMGzlNHch0NlCkkQ?e=8RKtja">How to create Feature request docs</a></p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="improvements-config-changes-velocity-productivity-enhancements">
-<h3><strong>Improvements (Config Changes, Velocity/Productivity Enhancements)</strong><a class="headerlink" href="#improvements-config-changes-velocity-productivity-enhancements" title="Link to this heading"></a></h3>
-<p>L2 identifies areas for improvement, such as system tuning, process automation, or optimizations that enhance performance and productivity. Once an improvement is proposed, the RTE or Product Manager reviews its feasibility, potential impact, and alignment with ongoing priorities. If approved, the implementation is assigned to either the DevOps team or the development team, ensuring that the necessary changes are executed efficiently to enhance system reliability and operational efficiency.</p>
-</section>
-</section>
-</section>
-<section id="dev-team-perspective-execution-responsibility">
-<h1>Dev Team Perspective: Execution &amp; Responsibility<a class="headerlink" href="#dev-team-perspective-execution-responsibility" title="Link to this heading"></a></h1>
-<section id="task-assignment-planning">
-<h2><strong>Task Assignment &amp; Planning</strong><a class="headerlink" href="#task-assignment-planning" title="Link to this heading"></a></h2>
-<p>The RTE or Product Manager assigns tasks to developers based on priority, ensuring that the most critical issues and enhancements are addressed first. Since these tasks are scheduled for release in the next software iteration, careful planning and adherence to timelines are essential to maintain a smooth development cycle and meet delivery commitments.</p>
-<section id="developer-s-responsibilities">
-<h3><strong>Developer’s Responsibilities</strong><a class="headerlink" href="#developer-s-responsibilities" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><strong>Timely Completion</strong>: Once assigned, developers are expected to complete tasks within the planned sprint.</p></li>
-<li><p><strong>Proactive Communication</strong>:</p>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
 <ul>
-<li><p>If any planning discrepancies arise, <strong>developers must immediately notify RTE/Product Manager</strong>.</p></li>
-<li><p>Developers must <strong>keep RTE/PdM in the loop</strong> throughout the task to ensure release planning stays on track.</p></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#sb-systems-architecture-overview">SB- Systems Architecture Overview</a></li>
 </ul>
 </li>
-<li><p><strong>Ownership of Updates</strong>:</p>
+<li class="toctree-l1"><a class="reference internal" href="l2todev.html">L2 to Dev Team Process Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="l2todev.html#issue-cases-identification-categorization">Issue/Cases Identification &amp; Categorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="l2todev.html#issue-cases-analysis-guide-docs">Issue/Cases Analysis Guide Docs:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="l2todev.html#issue-case-routing-documentation">Issue/Case Routing &amp; Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_team.html">Dev Team Perspective: Execution &amp; Responsibility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev_team.html#task-assignment-planning">Task Assignment &amp; Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev_team.html#developer-s-responsibilities">Developer’s Responsibilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev_team.html#collaboration-escalation">Collaboration &amp; Escalation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Management &amp; Deployment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="release.html#bugs-lifecycle-continuous-improvement">Bugs Lifecycle &amp; Continuous Improvement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development Process:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development.html#handling-bugs-efficiently">1. Handling Bugs Efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#handling-features">2. Handling Features</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
 <ul>
-<li><p><strong>It is not RTE/PdM’s responsibility to follow up</strong> on each step of the task.</p></li>
-<li><p><strong>Developers must update stakeholders</strong> on significant task milestones and blockers.</p></li>
+<li class="toctree-l1"><a class="reference internal" href="di_process.html">DI Development Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="di_process.html#motivation">1. Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="di_process.html#setup">2. Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#installation-tools-libraries">2.1 Installation Tools &amp; Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#tech-stack">Tech stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#required-permissions">2.2 Required Permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#cloning-procedure">2.3 Cloning Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#repositories-to-clone">2.4 Repositories to Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#installations">2.5 Installations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="di_process.html#useful-tools-to-have-in-place-before-starting">3. Useful tools to have in place before starting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#aliases">3.1 Aliases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#cli-highlighting">3.2 CLI highlighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#dev-containers">3.3 Dev containers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#concept-of-building-a-container">3.3.1 Concept of building a container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#setting-up-your-own-dev-container">3.3.2 Setting up your own dev container</a></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="collaboration-escalation">
-<h3><strong>Collaboration &amp; Escalation</strong><a class="headerlink" href="#collaboration-escalation" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Developers should <strong>escalate roadblocks early</strong> to prevent last-minute delays.</p></li>
-<li><p>Regular sync-ups with the team ensure alignment with the sprint goals.</p></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="release-management-deployment">
-<h1>Release Management &amp; Deployment<a class="headerlink" href="#release-management-deployment" title="Link to this heading"></a></h1>
-<p>Release planning begins with bundling bugs, features, and improvements into a structured release cycle, ensuring that each update is well-coordinated and aligned with business priorities. The RTE works closely with the DevOps team to establish deployment timelines, balancing stability with the need for continuous improvements. During release execution, all code changes undergo rigorous CI/CD testing, followed by pre-release validation from both QA and L2 to ensure functionality and reliability. After deployment, L2 actively monitors system behaviour to validate the release’s effectiveness, promptly identifying and addressing any post-release issues to maintain system stability.</p>
-<p><strong>Detailed Release Process</strong> <a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/s/04_chennai/ERH7UinW85VCtLb_-umRkd8BRcrj9NEgJeYj-_y5_6Qc7w?e=eRW1Ga">External Link</a></p>
-<section id="bugs-lifecycle-continuous-improvement">
-<h2>Bugs Lifecycle &amp; Continuous Improvement<a class="headerlink" href="#bugs-lifecycle-continuous-improvement" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><dl class="simple">
-<dt><strong>Tracking &amp; Resolution Metrics:</strong></dt><dd><ul>
-<li><p>Bug age, resolution time, and recurrence tracking.</p></li>
-</ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt><strong>Root Cause Analysis &amp; Prevention:</strong></dt><dd><ul>
-<li><p>Conduct postmortems for critical failures.</p></li>
-<li><p>Implement monitoring/logging improvements.</p></li>
+<li class="toctree-l2"><a class="reference internal" href="di_process.html#development-process">4. Development process</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#rca">4.0 RCA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#bugs">4.1 Bugs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#get-the-ticket-bugs">4.1.1 Get the Ticket (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#reproduce-the-bug-bugs">4.1.2 Reproduce the Bug (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#repository-setup-bugs">4.1.3 Repository Setup (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#implementation-bugs">4.1.4 Implementation (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#testing-bugs">4.1.5 Testing (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#raising-a-pull-request-pr-bugs">4.1.6 Raising a Pull Request (PR) (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#code-review-revisions-bugs">4.1.7 Code Review &amp; Revisions (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#qa-testing-bugs">4.1.8 QA Testing (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#merging-backporting-bugs">4.1.9 Merging &amp; Backporting (Bugs)</a></li>
 </ul>
-</dd>
-</dl>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="di_process.html#features">4.2 Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#prepare-a-design-document">4.2.1 Prepare a Design Document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#put-down-a-boilerplate-of-objects-and-data-structures-needed">4.2.2 Put Down a Boilerplate of Objects and Data Structures Needed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#repository-setup-features">4.2.3 Repository Setup (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc">4.2.4 Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#write-unit-tests-in-sync-with-qa-for-the-feature">4.2.5 Write Unit Tests in Sync with QA for the Feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#write-documentation">4.2.6 Write Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#add-ample-logs-and-traces-without-introducing-too-much-log-spam">4.2.7 Add Ample Logs and Traces Without Introducing Too Much Log Spam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#raising-a-pull-request-pr-features">4.2.8 Raising a Pull Request (PR) (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#code-review-revisions-features">4.2.9 Code Review &amp; Revisions (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#qa-testing-features">4.2.10 QA Testing (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="di_process.html#merging-backporting-features">4.2.11 Merging &amp; Backporting (Features)</a></li>
+</ul>
 </li>
 </ul>
-<p><strong>Bug Lifecycle &amp; RCA Process</strong> (External Link)</p>
-</section>
-</section>
-<section id="development-process-handling-bugs-efficiently">
-<h1>Development Process: Handling Bugs Efficiently<a class="headerlink" href="#development-process-handling-bugs-efficiently" title="Link to this heading"></a></h1>
-<p>The development process for handling bugs follows a structured workflow:</p>
-<section id="task-assignment-ownership">
-<h2><strong>Task Assignment &amp; Ownership</strong><a class="headerlink" href="#task-assignment-ownership" title="Link to this heading"></a></h2>
-<p>Bugs are assigned to developers through Azure tickets, typically by the Scrum team. While senior developers may sometimes assign tasks, this should ideally be avoided to maintain a standardized process. Once a bug is assigned, the developer must change the work item status to “In Progress” to indicate active development.</p>
-<section id="identifying-reproducing-the-bug">
-<h3><strong>Identifying &amp; Reproducing the Bug</strong><a class="headerlink" href="#identifying-reproducing-the-bug" title="Link to this heading"></a></h3>
-<dl class="simple">
-<dt>Before making any changes, the first step is to understand and reproduce the issue:</dt><dd><ul class="simple">
-<li><p>Identify the <strong>affected release version</strong> and check out the corresponding branch in the repository.</p></li>
-<li><p>Follow the documented steps to reproduce the issue in <strong>simulation or a test environment</strong> (see : Bug Reproduction Guide – Inprogress for details).</p></li>
-<li><p>If reproduction is successful, create a new feature branch for the fix.</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="bug-fixing-code-integration">
-<h3><strong>Bug Fixing &amp; Code Integration</strong><a class="headerlink" href="#bug-fixing-code-integration" title="Link to this heading"></a></h3>
-<p>Once the bug is confirmed and the relevant code section is identified:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Locate the faulty code and implement the necessary fix.</p></li>
-<li><p><strong>Create a Pull Request (PR)</strong> for code review (How to Create a PR – InProgress).</p></li>
-<li><p>Assign appropriate reviewers and keep the PR open for feedback.</p></li>
-<li><p>Address any review comments and continue refining the fix <strong>until code owners approve the PR.</strong></p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="merging-backporting">
-<h3><strong>Merging &amp; Backporting</strong><a class="headerlink" href="#merging-backporting" title="Link to this heading"></a></h3>
-<p>Once the PR is approved:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>The fix is merged into the main branch.</p></li>
-<li><p>Backporting is performed if the fix is required in multiple versions.</p></li>
-<li><p>The <strong>Azure ticket status is updated to “Merged.”</strong></p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="testing-validation">
-<h3><strong>Testing &amp; Validation</strong><a class="headerlink" href="#testing-validation" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>The <strong>Scrum Master updates the ticket status to “Ready to Test.”</strong></p></li>
-<li><p>QA and L2 validate the fix in a controlled environment.</p></li>
-<li><p>If any issues arise during testing, the status changes to “Blocked”, requiring the developer to revisit the fix and restart the cycle.</p></li>
-</ul>
-</div></blockquote>
-</section>
-</section>
-</section>
-<section id="development-process-handling-features">
-<h1>Development Process: Handling Features<a class="headerlink" href="#development-process-handling-features" title="Link to this heading"></a></h1>
-<p>The process for handling feature development closely follows the bug-fixing workflow, with additional steps to accommodate design and stakeholder approvals.</p>
-<section id="task-assignment-understanding-requirements">
-<h2>Task Assignment &amp; Understanding Requirements<a class="headerlink" href="#task-assignment-understanding-requirements" title="Link to this heading"></a></h2>
-<p>Feature development begins with the creation of a feature ticket in Azure (How to Create a Feature Ticket -Inprogress). The Product Manager (PdM) assigns tasks to developers, ensuring alignment with business goals and priorities. Developers must first thoroughly review the feature documentation to understand the scope and expected outcome.</p>
-<section id="design-collaboration">
-<h3>Design &amp; Collaboration<a class="headerlink" href="#design-collaboration" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>A <strong>Figma design</strong> is created to visualize the feature.</p></li>
-<li><p>The design is shared in <strong>#design</strong> for review and feedback.</p></li>
-<li><p>Once reviewed and approved, implementation begins.</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="development-code-integration">
-<h3>Development &amp; Code Integration<a class="headerlink" href="#development-code-integration" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>A <strong>new branch</strong> is created for development.</p></li>
-<li><p>Code is added and iteratively refined.</p></li>
-<li><p>A <strong>Pull Request (PR)</strong> is created and opened for reviewers (How to Create a PR-Inprogress).</p></li>
-<li><p>Reviewers provide feedback, and the <strong>loop continues until code owners approve the PR.</strong></p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="id1">
-<h3>Testing &amp; Validation<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>Once approved, the <strong>QA team tests the PR</strong> under <strong>“QA Testing”</strong> status.</p></li>
-<li><p>The feature remains in this state until testing is completed without issues.</p></li>
-<li><p>If no issues arise, the <strong>PR is merged,</strong> and backporting occurs if necessary.</p></li>
-<li><p>The <strong>Azure ticket status is updated to “Merged.”</strong></p></li>
-<li><p>The <strong>Scrum Master changes the status to “Ready to Test.”</strong></p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="handling-issues">
-<h3>Handling Issues<a class="headerlink" href="#handling-issues" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>If an issue is found during testing, the status is changed to <strong>“Blocked.”</strong></p></li>
-<li><p>At this point, the feature effectively becomes a <strong>bug</strong>, and the <strong>bug-fixing process begins</strong>, looping back to reproduction, fixing, review, and testing.</p></li>
-</ul>
-</div></blockquote>
-</section>
-</section>
-</section>
-<section id="di-development-process">
-<h1>DI Development Process<a class="headerlink" href="#di-development-process" title="Link to this heading"></a></h1>
-<p>The DI Development Process provides a clear onboarding and workflow guide for new and existing developers, ensuring fast setup and consistent practices. It covers:</p>
-<ul class="simple">
-<li><p>Setup (tools, permissions, repository cloning)</p></li>
-<li><p>Dev containers for consistent environments</p></li>
-<li><p>Agile workflow and sprint planning</p></li>
-<li><p>Step-by-step bug and feature workflows</p></li>
-<li><p>Best practices for code, testing, and documentation</p></li>
-</ul>
-<p>For the complete process document, refer to:
-<a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/SB_Systems/Process_Docs/DI%20Development%20Process.docx?d=w05b46364b4aa4cd5af2d36fb92f1f1d1&amp;csf=1&amp;web=1&amp;e=nSvcFc">DI Development Process.docx</a>
-<a class="reference internal" href="di_process.html"><span class="doc">DI Process</span></a></p>
-</section>
-<section id="ui-development-process-frontend">
-<h1>UI Development Process (Frontend)<a class="headerlink" href="#ui-development-process-frontend" title="Link to this heading"></a></h1>
-<p>This section outlines the essential setup and workflows for SB-Dev UI (Frontend) development, ensuring a smooth onboarding and consistent delivery:</p>
-<p><strong>Setup Requirements</strong></p>
-<ul class="simple">
-<li><p>Install VS Code, Docker, Yarn, Node (v18), and extensions for Docker.</p></li>
-<li><p>Use a tech stack of TypeScript, CSS/Tailwind CSS, ReactJS, Redux, and Jest.</p></li>
-<li><p>Ensure access to Azure, GitHub Engineering, Quay.io, ReadTheDocs, and optionally Figma.</p></li>
-<li><p>Clone the following repositories: <em>rr_sootballs</em>, <em>rr_amr_ui</em>, <em>rr_orders_ui_modules</em>, and <em>rr_sootballs_robot_ui</em>.</p></li>
-</ul>
-<p><strong>Feature Development Workflow</strong></p>
-<ol class="arabic simple">
-<li><p>Obtain and clarify the Azure ticket.</p></li>
-<li><p>Prepare feature documentation and design (using Figma if needed).</p></li>
-<li><p>Set up the repository and create a new branch.</p></li>
-<li><p>Implement the feature, write unit tests (Jest), and document your work.</p></li>
-<li><p>Raise a Pull Request (PR), reference the Azure task, and request code review.</p></li>
-<li><p>Address review comments, undergo QA testing, and merge/backport as required.</p></li>
-</ol>
-<p><strong>Bug Fix Workflow</strong></p>
-<ol class="arabic simple">
-<li><p>Retrieve and clarify the Azure ticket.</p></li>
-<li><p>Reproduce the bug and identify the affected repository.</p></li>
-<li><p>Create a new branch, apply the fix, and test using <cite>yarn test</cite>.</p></li>
-<li><p>Follow the same PR, review, QA, and merge steps as in feature development.</p></li>
-</ol>
-<p>For detailed step-by-step instructions, refer to the full process document:
-<a class="reference external" href="https://gajanrapyutarobotics.sharepoint.com/:w:/r/sites/04_chennai/Shared%20Documents/SB_Systems/Process_Docs/UI%20Dev%20Process.docx?d=wbff1a2a394ae4166ae0fe41dbe64a111&amp;csf=1&amp;web=1&amp;e=Q5MCWJ">UI Dev Process.docx</a></p>
-</section>
-<section id="qa-process-feature-bug-validation">
-<h1>QA Process: Feature &amp; Bug Validation<a class="headerlink" href="#qa-process-feature-bug-validation" title="Link to this heading"></a></h1>
-<p>To ensure a structured and efficient QA process, the team needs better visibility into the workload beyond sync meetings. Establishing a clear process will help streamline testing, automate ticket creation, and integrate QA activities more effectively into planning and execution. <a class="reference internal" href="qa_process.html"><span class="doc">QA Process document in detail here</span></a></p>
-<section id="work-assignment-ticket-creation">
-<h2>Work Assignment &amp; Ticket Creation<a class="headerlink" href="#work-assignment-ticket-creation" title="Link to this heading"></a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>The <strong>QA lead is informed of testing requirements</strong> during the <strong>SB-Dev sync meetings,</strong> where development progress and pending work are discussed.</p></li>
-<li><p>Based on this, <strong>QA tickets are created</strong> for every development ticket (feature or bug).</p></li>
-<li><p>An <strong>automated flow for QA ticket creation</strong> is being developed (Assigned to Vasee).</p></li>
-<li><p>Documentation on <strong>how to create QA tickets</strong> is available here</p></li>
-</ul>
-</div></blockquote>
-<section id="testing-scope-approach">
-<h3>Testing Scope &amp; Approach<a class="headerlink" href="#testing-scope-approach" title="Link to this heading"></a></h3>
-<p>QA activities occur at multiple stages:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Feature integration</strong> testing.</p></li>
-<li><p><strong>Bug fix validation</strong> for both minor fixes and critical issues.</p></li>
-<li><p><strong>Regression testing</strong> for full releases (e.g., 3.3.1).</p></li>
-<li><p><strong>Daily CI/CD testing</strong> during development cycles.</p></li>
-</ul>
-</div></blockquote>
-<p>The extent of automation depends on <strong>timeline and workload:</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Features</strong> are <strong>fully automated</strong> to ensure long-term test coverage.</p></li>
-<li><p><strong>Bug fixes</strong> are automated <strong>only if time permits,</strong> as they may be one-time validations.</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="execution-reporting">
-<h3>Execution &amp; Reporting<a class="headerlink" href="#execution-reporting" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Testing is performed in simulation</strong> first.  <span class="red">Once the Chennai demo setup is ready, testing will include real-time validation.</span></p></li>
-<li><p>Upon completion, <strong>QA updates the ticket status</strong> to reflect test results.</p></li>
-<li><p>Findings and test coverage are <strong>discussed in sprint planning and retrospectives</strong> to ensure continuous improvement.</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="continuous-integration-release-testing">
-<h3>Continuous Integration &amp; Release Testing<a class="headerlink" href="#continuous-integration-release-testing" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Daily CI runs occur every evening,</strong> covering all release branches and the development branch.</p></li>
-<li><p><strong>Nightly test runs (6.5 hours)</strong> execute across all major branches.</p></li>
-<li><p>If a CI/CD test fails, it is <strong>investigated—</strong> either fixed immediately or temporarily skipped based on priority.</p></li>
-<li><p>Detailed documentation on  <a class="reference internal" href="ci_run.html"><span class="doc">how to initiate different types of CI runs for specific suites or nightly tests, confidence tests, or performance tests can be found here:</span></a></p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="production-bug-testing-rca">
-<h3>Production Bug Testing &amp; RCA<a class="headerlink" href="#production-bug-testing-rca" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>All production bugs undergo RCA (Root Cause Analysis)</strong> to prevent recurrence.</p></li>
-<li><p>RCA includes a <strong>comparison between simulation and real-world behaviour</strong> to identify discrepancies.</p></li>
-<li><p>If a test case gap is found to be the root cause, <strong>new test cases are added</strong> to the suite.</p></li>
-<li><p>A <strong>review of production bug counts vs. RCA findings</strong> ensures continuous improvement and refinement of test strategies.</p></li>
-</ul>
-</div></blockquote>
-</section>
-</section>
-</section>
-<section id="rte-process-managing-release-flow-coordination">
-<h1>RTE Process: Managing Release Flow &amp; Coordination<a class="headerlink" href="#rte-process-managing-release-flow-coordination" title="Link to this heading"></a></h1>
-<p>The <strong>Release Train Engineer (RTE)</strong> plays a crucial role in ensuring a smooth transition from development to deployment by managing bug fixes, feature releases, and coordinating regression testing before promoting releases to production.</p>
-<section id="feature-bug-management">
-<h2>Feature &amp; Bug Management<a class="headerlink" href="#feature-bug-management" title="Link to this heading"></a></h2>
-<p>Once <strong>QA signs off on testing,</strong> the RTE oversees the next steps for both <strong>feature releases (FR) and bug fixes:</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
-<dt><strong>Feature Releases (FR):</strong></dt><dd><ul>
-<li><p>All tasks exist in <strong>different branches,</strong> ensuring independent development and review.</p></li>
-<li><p><strong>All PRs remain in draft</strong> until they are ready for merging.</p></li>
-</ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt><strong>Bug Fixes:</strong></dt><dd><ul>
-<li><p><strong>Bugs are planned sprint-wise,</strong> ensuring structured resolution.</p></li>
-<li><p>Each bug ticket must include clear reproduction steps to avoid ambiguity.</p></li>
-<li><p>The standard workflow follows <strong>L2 → RTE → Dev → RTE</strong> before proceeding further.</p></li>
-<li><p>Unlike features, <strong>completed bug fixes are first reviewed by RTE, not QA,</strong> to ensure correctness and necessary documentation updates.</p></li>
-<li><p>Developers must <strong>refine and confirm the reproduction steps,</strong> if necessary, before passing the fix to QA.</p></li>
+<li class="toctree-l2"><a class="reference internal" href="di_process.html#revision-history">Revision History</a></li>
 </ul>
-</dd>
-</dl>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_process.html">UI Development Process (Frontend)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_process.html#requirements-for-setup">1. Requirements for Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#installation-tools-libraries">1.1 Installation Tools &amp; Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#required-permissions">1.2. Required Permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#cloning-procedure">1.3. Cloning Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#repositories-to-clone">1.4. Repositories to Clone</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui_process.html#workflow">2. Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#get-the-ticket">2.1. Get the Ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#feature-documentation">2.2. Feature Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#design-review">2.3. Design Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#repository-setup">2.4. Repository Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#implementation">2.5. Implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#unit-testing">2.6. Unit Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#raising-a-pull-request-pr">2.7. Raising a Pull Request (PR)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#code-review-revisions">2.8. Code Review &amp; Revisions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#qa-testing">2.9. QA Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#merging-backporting">2.10. Merging &amp; Backporting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui_process.html#ui-bug-fix-workflow">3. UI - Bug Fix Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#bugfix-get-ticket">3.1. Get the Ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#reproduce-the-bug">3.2. Reproduce the Bug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#bugfix-repository-setup">3.3. Repository Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#bugfix-implementation">3.4. Implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#testing">3.5. Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_process.html#next">Next</a></li>
+</ul>
 </li>
 </ul>
-</div></blockquote>
-<section id="regression-testing-bug-loops">
-<h3>Regression Testing &amp; Bug Loops<a class="headerlink" href="#regression-testing-bug-loops" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>QA performs <strong>focused regression</strong> for each bug fix rather than a full regression, ensuring that specific issues are validated.</p></li>
-<li><p><strong>Why is full regression not happening?</strong> This needs discussion with QA to evaluate gaps.</p></li>
-<li><p><strong>Are bugs being deprioritized?</strong> If so, involving more development resources within the systems team may be required.</p></li>
-<li><p>If new bugs are discovered during regression, <strong>new bug tickets are created,</strong> initiating another <strong>dev → QA → RC release cycle.</strong></p></li>
-<li><p>This process repeats <strong>until regression completes without issues.</strong></p></li>
+</li>
 </ul>
-</div></blockquote>
-</section>
-<section id="rc-promotion-production-deployment">
-<h3>RC Promotion &amp; Production Deployment<a class="headerlink" href="#rc-promotion-production-deployment" title="Link to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>Once <strong>all regression tests pass,</strong> the <strong>RTE promotes the RC (Release Candidate) to a production release</strong> (RC to Production Release Guide-Inprogress).</p></li>
-<li><p>After <strong>release promotion,</strong> the <strong>ROPS team</strong> takes over production deployment.</p></li>
-<li><p>With support from the <strong>FE team,</strong> ROPS ensures that the final software is successfully deployed to production environments.</p></li>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rte.html">RTE Process: Managing Release Flow &amp; Coordination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="last.html">Development &amp; Release Process: Ensuring a Smooth Deployment</a></li>
 </ul>
-</div></blockquote>
-<a class="reference internal image-reference" href="_images/pic13.png"><img alt="SB- Systems 1" class="align-center" src="_images/pic13.png" style="width: 600px;" />
-</a>
-<br><br><a class="reference internal image-reference" href="_images/pic21.png"><img alt="SB- Systems 2" class="align-center" src="_images/pic21.png" style="width: 600px;" />
-</a>
-<br><br></section>
-</section>
-</section>
-<section id="development-release-process-ensuring-a-smooth-deployment">
-<h1>Development &amp; Release Process: Ensuring a Smooth Deployment<a class="headerlink" href="#development-release-process-ensuring-a-smooth-deployment" title="Link to this heading"></a></h1>
-<p>The development, QA, and release processes follow a structured workflow to ensure that all features and bug fixes are properly integrated, tested, and deployed with minimal risk.</p>
-<p>From the <strong>developer’s perspective,</strong> once a new feature is planned, they create a <strong>Feature Request (FR) branch</strong> and ensure that all related pull requests (PRs) are merged back into their respective feature branches. Before the final integration into the main development branch (devel), developers carefully review the branches to confirm that all relevant production releases contain the necessary changes. For bug fixes, developers ensure that once QA has validated the fixes, they are merged into the appropriate branches. If the fixes are required in a production release, developers handle cherry-picking to the <strong>production Release Candidate (RC) branch,</strong> ensuring consistency across multiple release versions.</p>
-<p>At this stage, the <strong>RTE and Product Manager (PdM) take over the process,</strong> verifying that all <strong>feature branches are ready</strong> and that <strong>bug fixes have been QA-approved.</strong> The RTE ensures that all <strong>PRs for the upcoming production RC release are cherry-picked into devel,</strong> and once confirmed, the development branch is branched off into the next production release. This transition marks the beginning of the release preparation phase.</p>
-<p>Once the <strong>next production RC release branch is created,</strong> the <strong>release process</strong> begins with the generation of <strong>Quay images,</strong> followed by a <strong>QA-led regression testing cycle.</strong> Post-merge, <strong>sanity checks, regression tests, and nightly test runs</strong> validate the stability of the RC release. Nightly tests are crucial as they help uncover inconsistencies, performance issues, or integration failures that might not surface in smaller tests. If any new bugs are discovered during this phase, new bug tickets are created, initiating another cycle of <strong>development, QA validation, and RC release updates.</strong> This iterative process continues until regression is completed without any unresolved issues.</p>
-<p>Once the <strong>QA team confirms the RC release is stable,</strong> the <strong>RTE promotes the RC to a production release.</strong> At this point, <strong>ROPS, with assistance from the FE team, takes over the production deployment</strong> to ensure a seamless transition into the live environment.</p>
-<section id="reference-documents-external-links">
-<h2>Reference Documents &amp; External Links<a class="headerlink" href="#reference-documents-external-links" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p>Detailed Bug Management Process (External Link)</p></li>
-<li><p>Feature Request Workflow (External Link)</p></li>
-<li><p>Improvements Workflow (External Link)</p></li>
-<li><p>How to Create Bug Ticket (In Progress)</p></li>
-<li><p>How to Create Feature Request (In Progress)</p></li>
-<li><p>How to Create Improvements (In Progress)</p></li>
-<li><p>Bug Lifecycle &amp; RCA Process (External Link)</p></li>
-<li><p>QA Process Document (External Link)</p></li>
-<li><p>RC to Production Release Guide (In Progress)</p></li>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="systems.html">QA Process: Feature &amp; Bug Validation</a></li>
 </ul>
-</section>
+</div>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Rajkumar Subbiaya.</p>
+    <p>&#169; Copyright 2025, Rapyuta Robotics.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

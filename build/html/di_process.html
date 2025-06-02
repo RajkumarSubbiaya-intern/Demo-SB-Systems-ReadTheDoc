@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DI Development Process &mdash; ReadTheDocs Demo  documentation</title>
+  <title>DI Development Process &mdash; rr_sb_sysytem_docs  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=95bb6376" />
@@ -19,7 +19,9 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="UI Development Process (Frontend)" href="ui_process.html" />
+    <link rel="prev" title="Development Process:" href="development.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,76 +44,86 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">DI Development Process</a><ul>
-<li><a class="reference internal" href="#index">Index</a></li>
-<li><a class="reference internal" href="#motivation">1. Motivation</a></li>
-<li><a class="reference internal" href="#setup">2. Setup</a><ul>
-<li><a class="reference internal" href="#installation-tools-libraries"><strong>2.1 Installation Tools &amp; Libraries</strong></a></li>
-<li><a class="reference internal" href="#tech-stack"><strong>Tech stack</strong></a></li>
-<li><a class="reference internal" href="#required-permissions"><strong>2.2 Required Permissions</strong></a></li>
-<li><a class="reference internal" href="#cloning-procedure"><strong>2.3 Cloning Procedure</strong></a></li>
-<li><a class="reference internal" href="#repositories-to-clone"><strong>2.4 Repositories to Clone</strong></a></li>
-<li><a class="reference internal" href="#installations"><strong>2.5 Installations</strong></a></li>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l2todev.html">L2 to Dev Team Process Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev_team.html">Dev Team Perspective: Execution &amp; Responsibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Management &amp; Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development Process:</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DI Development Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivation">1. Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup">2. Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation-tools-libraries">2.1 Installation Tools &amp; Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tech-stack">Tech stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#required-permissions">2.2 Required Permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cloning-procedure">2.3 Cloning Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#repositories-to-clone">2.4 Repositories to Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installations">2.5 Installations</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#useful-tools-to-have-in-place-before-starting">3. Useful tools to have in place before starting</a><ul>
-<li><a class="reference internal" href="#aliases"><strong>3.1 Aliases</strong></a></li>
-<li><a class="reference internal" href="#cli-highlighting"><strong>3.2 CLI highlighting</strong></a></li>
-<li><a class="reference internal" href="#dev-containers"><strong>3.3 Dev containers</strong></a><ul>
-<li><a class="reference internal" href="#concept-of-building-a-container"><strong>3.3.1 Concept of building a container</strong></a><ul>
-<li><a class="reference internal" href="#building-the-container"><strong>3.3.1.1 Building the container</strong></a></li>
-<li><a class="reference internal" href="#running-the-container"><strong>3.3.1.2 Running the container</strong></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#setting-up-your-own-dev-container"><strong>3.3.2 Setting up your own dev container</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#development-process">4. Development process</a><ul>
-<li><a class="reference internal" href="#rca"><strong>4.0 RCA</strong></a></li>
-<li><a class="reference internal" href="#bugs"><strong>4.1 Bugs</strong></a><ul>
-<li><a class="reference internal" href="#get-the-ticket"><strong>4.1.1 Get the Ticket</strong></a></li>
-<li><a class="reference internal" href="#reproduce-the-bug"><strong>4.1.2 Reproduce the Bug</strong></a></li>
-<li><a class="reference internal" href="#repository-setup"><strong>4.1.3 Repository Setup</strong></a></li>
-<li><a class="reference internal" href="#implementation"><strong>4.1.4 Implementation</strong></a></li>
-<li><a class="reference internal" href="#testing"><strong>4.1.5 Testing</strong></a></li>
-<li><a class="reference internal" href="#raising-a-pull-request-pr"><strong>4.1.6 Raising a Pull Request (PR)</strong></a></li>
-<li><a class="reference internal" href="#code-review-revisions"><strong>4.1.7 Code Review &amp; Revisions</strong></a></li>
-<li><a class="reference internal" href="#qa-testing"><strong>4.1.8 QA Testing</strong></a></li>
-<li><a class="reference internal" href="#merging-backporting"><strong>4.1.9 Merging &amp; Backporting</strong></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#features"><strong>4.2 Features</strong></a><ul>
-<li><a class="reference internal" href="#prepare-a-design-document"><strong>4.2.1 Prepare a Design Document</strong></a></li>
-<li><a class="reference internal" href="#put-down-a-boilerplate-of-objects-and-data-structures-needed"><strong>4.2.2 Put Down a Boilerplate of Objects and Data Structures Needed</strong></a></li>
-<li><a class="reference internal" href="#features-repository-setup"><strong>4.2.3 Repository Setup</strong></a></li>
-<li><a class="reference internal" href="#implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc"><strong>4.2.4 Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</strong></a></li>
-<li><a class="reference internal" href="#write-unit-tests-in-sync-with-qa-for-the-feature"><strong>4.2.5 Write Unit Tests in Sync with QA for the Feature</strong></a></li>
-<li><a class="reference internal" href="#write-documentation"><strong>4.2.6 Write Documentation</strong></a></li>
-<li><a class="reference internal" href="#add-ample-logs-and-traces-without-introducing-too-much-log-spam"><strong>4.2.7 Add Ample Logs and Traces Without Introducing Too Much Log Spam</strong></a></li>
-<li><a class="reference internal" href="#features-raising-pr"><strong>4.2.8 Raising a Pull Request (PR)</strong></a></li>
-<li><a class="reference internal" href="#features-code-review"><strong>4.2.9 Code Review &amp; Revisions</strong></a></li>
-<li><a class="reference internal" href="#features-qa-testing"><strong>4.2.10 QA Testing</strong></a></li>
-<li><a class="reference internal" href="#features-merging-backporting"><strong>4.2.11 Merging &amp; Backporting</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#useful-tools-to-have-in-place-before-starting">3. Useful tools to have in place before starting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aliases">3.1 Aliases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cli-highlighting">3.2 CLI highlighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dev-containers">3.3 Dev containers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#concept-of-building-a-container">3.3.1 Concept of building a container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up-your-own-dev-container">3.3.2 Setting up your own dev container</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-process">4. Development process</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rca">4.0 RCA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bugs">4.1 Bugs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#get-the-ticket-bugs">4.1.1 Get the Ticket (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reproduce-the-bug-bugs">4.1.2 Reproduce the Bug (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#repository-setup-bugs">4.1.3 Repository Setup (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#implementation-bugs">4.1.4 Implementation (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#testing-bugs">4.1.5 Testing (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raising-a-pull-request-pr-bugs">4.1.6 Raising a Pull Request (PR) (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-review-revisions-bugs">4.1.7 Code Review &amp; Revisions (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qa-testing-bugs">4.1.8 QA Testing (Bugs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#merging-backporting-bugs">4.1.9 Merging &amp; Backporting (Bugs)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#features">4.2 Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prepare-a-design-document">4.2.1 Prepare a Design Document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#put-down-a-boilerplate-of-objects-and-data-structures-needed">4.2.2 Put Down a Boilerplate of Objects and Data Structures Needed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#repository-setup-features">4.2.3 Repository Setup (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc">4.2.4 Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#write-unit-tests-in-sync-with-qa-for-the-feature">4.2.5 Write Unit Tests in Sync with QA for the Feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#write-documentation">4.2.6 Write Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-ample-logs-and-traces-without-introducing-too-much-log-spam">4.2.7 Add Ample Logs and Traces Without Introducing Too Much Log Spam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raising-a-pull-request-pr-features">4.2.8 Raising a Pull Request (PR) (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-review-revisions-features">4.2.9 Code Review &amp; Revisions (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qa-testing-features">4.2.10 QA Testing (Features)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#merging-backporting-features">4.2.11 Merging &amp; Backporting (Features)</a></li>
 </ul>
 </li>
 </ul>
-</div>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_process.html">UI Development Process (Frontend)</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rte.html">RTE Process: Managing Release Flow &amp; Coordination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="last.html">Development &amp; Release Process: Ensuring a Smooth Deployment</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="systems.html">QA Process: Feature &amp; Bug Validation</a></li>
+</ul>
+
         </div>
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ReadTheDocs Demo</a>
+          <a href="index.html">rr_sb_sysytem_docs</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -131,71 +143,81 @@
              
   <section id="di-development-process">
 <h1>DI Development Process<a class="headerlink" href="#di-development-process" title="Link to this heading"></a></h1>
-<section id="index">
-<h2>Index<a class="headerlink" href="#index" title="Link to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-</div>
-<ol class="arabic">
-<li><p><a class="reference internal" href="#motivation-section"><span class="std std-ref">Motivation</span></a></p></li>
-<li><p><a class="reference internal" href="#setup-section"><span class="std std-ref">Setup</span></a></p>
-<p>2.1 <a class="reference internal" href="#setup-installation-tools-libs"><span class="std std-ref">Installation Tools &amp; Libraries</span></a></p>
-<p>2.2 <a class="reference internal" href="#setup-required-permissions"><span class="std std-ref">Required Permissions</span></a></p>
-<p>2.3 <a class="reference internal" href="#setup-cloning-procedure"><span class="std std-ref">Cloning Procedure</span></a></p>
-<p>2.4 <a class="reference internal" href="#setup-repositories-to-clone"><span class="std std-ref">Repositories to Clone</span></a></p>
-<p>2.5 <a class="reference internal" href="#setup-installations"><span class="std std-ref">Installations</span></a></p>
+<nav class="contents local" id="index">
+<p class="topic-title">Index</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#motivation" id="id3">1. Motivation</a></p></li>
+<li><p><a class="reference internal" href="#setup" id="id4">2. Setup</a></p>
+<ul>
+<li><p><a class="reference internal" href="#installation-tools-libraries" id="id5">2.1 Installation Tools &amp; Libraries</a></p></li>
+<li><p><a class="reference internal" href="#tech-stack" id="id6">Tech stack</a></p></li>
+<li><p><a class="reference internal" href="#required-permissions" id="id7">2.2 Required Permissions</a></p></li>
+<li><p><a class="reference internal" href="#cloning-procedure" id="id8">2.3 Cloning Procedure</a></p></li>
+<li><p><a class="reference internal" href="#repositories-to-clone" id="id9">2.4 Repositories to Clone</a></p></li>
+<li><p><a class="reference internal" href="#installations" id="id10">2.5 Installations</a></p></li>
+</ul>
 </li>
-<li><p><a class="reference internal" href="#useful-tools-section"><span class="std std-ref">Useful tools to have in place before starting</span></a></p>
-<p>3.1 <a class="reference internal" href="#useful-tools-aliases"><span class="std std-ref">Aliases</span></a></p>
-<p>3.2 <a class="reference internal" href="#useful-tools-cli-highlighting"><span class="std std-ref">CLI highlighting</span></a></p>
-<p>3.3 <a class="reference internal" href="#useful-tools-dev-containers"><span class="std std-ref">Dev containers</span></a></p>
-<blockquote>
-<div><p>3.3.1 <a class="reference internal" href="#dev-containers-concept"><span class="std std-ref">Concept of building a container</span></a></p>
-<blockquote>
-<div><p>3.3.1.1 <a class="reference internal" href="#dev-containers-building"><span class="std std-ref">Building the container</span></a></p>
-<p>3.3.1.2 <a class="reference internal" href="#dev-containers-running"><span class="std std-ref">Running the container</span></a></p>
-</div></blockquote>
-<p>3.3.2 <a class="reference internal" href="#dev-containers-setting-up"><span class="std std-ref">Setting up your own dev container</span></a></p>
-</div></blockquote>
+<li><p><a class="reference internal" href="#useful-tools-to-have-in-place-before-starting" id="id11">3. Useful tools to have in place before starting</a></p>
+<ul>
+<li><p><a class="reference internal" href="#aliases" id="id12">3.1 Aliases</a></p></li>
+<li><p><a class="reference internal" href="#cli-highlighting" id="id13">3.2 CLI highlighting</a></p></li>
+<li><p><a class="reference internal" href="#dev-containers" id="id14">3.3 Dev containers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#concept-of-building-a-container" id="id15">3.3.1 Concept of building a container</a></p>
+<ul>
+<li><p><a class="reference internal" href="#building-the-container" id="id16">3.3.1.1 Building the container</a></p></li>
+<li><p><a class="reference internal" href="#running-the-container" id="id17">3.3.1.2 Running the container</a></p></li>
+</ul>
 </li>
-<li><p><a class="reference internal" href="#development-process-section"><span class="std std-ref">Development process</span></a></p>
-<p>4.0 <a class="reference internal" href="#development-process-rca"><span class="std std-ref">RCA</span></a></p>
-<p>4.1 <a class="reference internal" href="#development-process-bugs"><span class="std std-ref">Bugs</span></a></p>
-<blockquote>
-<div><p>4.1.1 <a class="reference internal" href="#bugs-get-ticket"><span class="std std-ref">Get the Ticket</span></a></p>
-<p>4.1.2 <a class="reference internal" href="#bugs-reproduce-bug"><span class="std std-ref">Reproduce the Bug</span></a></p>
-<p>4.1.3 <a class="reference internal" href="#bugs-repository-setup"><span class="std std-ref">Repository Setup</span></a></p>
-<p>4.1.4 <a class="reference internal" href="#bugs-implementation"><span class="std std-ref">Implementation</span></a></p>
-<p>4.1.5 <a class="reference internal" href="#bugs-testing"><span class="std std-ref">Testing</span></a></p>
-<p>4.1.6 <a class="reference internal" href="#bugs-raising-pr"><span class="std std-ref">Raising a Pull Request (PR)</span></a></p>
-<p>4.1.7 <a class="reference internal" href="#bugs-code-review"><span class="std std-ref">Code Review &amp; Revisions</span></a></p>
-<p>4.1.8 <a class="reference internal" href="#bugs-qa-testing"><span class="std std-ref">QA Testing</span></a></p>
-<p>4.1.9 <a class="reference internal" href="#bugs-merging-backporting"><span class="std std-ref">Merging &amp; Backporting</span></a></p>
-</div></blockquote>
-<p>4.2 <a class="reference internal" href="#development-process-features"><span class="std std-ref">Features</span></a></p>
-<blockquote>
-<div><p>4.2.1 <a class="reference internal" href="#features-prepare-design-doc"><span class="std std-ref">Prepare a Design Document</span></a></p>
-<p>4.2.2 <a class="reference internal" href="#features-boilerplate-objects"><span class="std std-ref">Put Down a Boilerplate of Objects and Data Structures Needed</span></a></p>
-<p>4.2.3 <a class="reference internal" href="#features-repository-setup"><span class="std std-ref">Repository Setup</span></a></p>
-<p>4.2.4 <a class="reference internal" href="#features-implement-methods"><span class="std std-ref">Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</span></a></p>
-<p>4.2.5 <a class="reference internal" href="#features-write-unit-tests"><span class="std std-ref">Write Unit Tests in Sync with QA for the Feature</span></a></p>
-<p>4.2.6 <a class="reference internal" href="#features-write-documentation"><span class="std std-ref">Write Documentation</span></a></p>
-<p>4.2.7 <a class="reference internal" href="#features-add-logs-traces"><span class="std std-ref">Add Ample Logs and Traces Without Introducing Too Much Log Spam</span></a></p>
-<p>4.2.8 <a class="reference internal" href="#features-raising-pr"><span class="std std-ref">Raising a Pull Request (PR)</span></a></p>
-<p>4.2.9 <a class="reference internal" href="#features-code-review"><span class="std std-ref">Code Review &amp; Revisions</span></a></p>
-<p>4.2.10 <a class="reference internal" href="#features-qa-testing"><span class="std std-ref">QA Testing</span></a></p>
-<p>4.2.11 <a class="reference internal" href="#features-merging-backporting"><span class="std std-ref">Merging &amp; Backporting</span></a></p>
-</div></blockquote>
+<li><p><a class="reference internal" href="#setting-up-your-own-dev-container" id="id18">3.3.2 Setting up your own dev container</a></p></li>
+</ul>
 </li>
-</ol>
-</section>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#development-process" id="id19">4. Development process</a></p>
+<ul>
+<li><p><a class="reference internal" href="#rca" id="id20">4.0 RCA</a></p></li>
+<li><p><a class="reference internal" href="#bugs" id="id21">4.1 Bugs</a></p>
+<ul>
+<li><p><a class="reference internal" href="#get-the-ticket-bugs" id="id22">4.1.1 Get the Ticket (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#reproduce-the-bug-bugs" id="id23">4.1.2 Reproduce the Bug (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#repository-setup-bugs" id="id24">4.1.3 Repository Setup (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#implementation-bugs" id="id25">4.1.4 Implementation (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#testing-bugs" id="id26">4.1.5 Testing (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#raising-a-pull-request-pr-bugs" id="id27">4.1.6 Raising a Pull Request (PR) (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#code-review-revisions-bugs" id="id28">4.1.7 Code Review &amp; Revisions (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#qa-testing-bugs" id="id29">4.1.8 QA Testing (Bugs)</a></p></li>
+<li><p><a class="reference internal" href="#merging-backporting-bugs" id="id30">4.1.9 Merging &amp; Backporting (Bugs)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#features" id="id31">4.2 Features</a></p>
+<ul>
+<li><p><a class="reference internal" href="#prepare-a-design-document" id="id32">4.2.1 Prepare a Design Document</a></p></li>
+<li><p><a class="reference internal" href="#put-down-a-boilerplate-of-objects-and-data-structures-needed" id="id33">4.2.2 Put Down a Boilerplate of Objects and Data Structures Needed</a></p></li>
+<li><p><a class="reference internal" href="#repository-setup-features" id="id34">4.2.3 Repository Setup (Features)</a></p></li>
+<li><p><a class="reference internal" href="#implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc" id="id35">4.2.4 Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</a></p></li>
+<li><p><a class="reference internal" href="#write-unit-tests-in-sync-with-qa-for-the-feature" id="id36">4.2.5 Write Unit Tests in Sync with QA for the Feature</a></p></li>
+<li><p><a class="reference internal" href="#write-documentation" id="id37">4.2.6 Write Documentation</a></p></li>
+<li><p><a class="reference internal" href="#add-ample-logs-and-traces-without-introducing-too-much-log-spam" id="id38">4.2.7 Add Ample Logs and Traces Without Introducing Too Much Log Spam</a></p></li>
+<li><p><a class="reference internal" href="#raising-a-pull-request-pr-features" id="id39">4.2.8 Raising a Pull Request (PR) (Features)</a></p></li>
+<li><p><a class="reference internal" href="#code-review-revisions-features" id="id40">4.2.9 Code Review &amp; Revisions (Features)</a></p></li>
+<li><p><a class="reference internal" href="#qa-testing-features" id="id41">4.2.10 QA Testing (Features)</a></p></li>
+<li><p><a class="reference internal" href="#merging-backporting-features" id="id42">4.2.11 Merging &amp; Backporting (Features)</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#revision-history" id="id43">Revision History</a></p></li>
+</ul>
+</nav>
 <section id="motivation">
-<span id="motivation-section"></span><h2>1. Motivation<a class="headerlink" href="#motivation" title="Link to this heading"></a></h2>
+<span id="motivation-section"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">1. Motivation</a><a class="headerlink" href="#motivation" title="Link to this heading"></a></h2>
 <p>To have a quick onboarding process to the DI development process for newcomers to minimize the time to start contributing.</p>
 </section>
 <section id="setup">
-<span id="setup-section"></span><h2>2. Setup<a class="headerlink" href="#setup" title="Link to this heading"></a></h2>
+<span id="setup-section"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">2. Setup</a><a class="headerlink" href="#setup" title="Link to this heading"></a></h2>
 <section id="installation-tools-libraries">
-<span id="setup-installation-tools-libs"></span><h3><strong>2.1 Installation Tools &amp; Libraries</strong><a class="headerlink" href="#installation-tools-libraries" title="Link to this heading"></a></h3>
+<span id="setup-installation-tools-libs"></span><h3><a class="toc-backref" href="#id5" role="doc-backlink">2.1 Installation Tools &amp; Libraries</a><a class="headerlink" href="#installation-tools-libraries" title="Link to this heading"></a></h3>
 <p>Ensure the following tools and libraries are installed:</p>
 <ul class="simple">
 <li><p>VS Code</p></li>
@@ -210,7 +232,7 @@
 </ul>
 </section>
 <section id="tech-stack">
-<h3><strong>Tech stack</strong><a class="headerlink" href="#tech-stack" title="Link to this heading"></a></h3>
+<span id="tech-stack-section"></span><h3><a class="toc-backref" href="#id6" role="doc-backlink">Tech stack</a><a class="headerlink" href="#tech-stack" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>C++ STL</p></li>
 <li><p>GTest</p></li>
@@ -219,7 +241,7 @@
 </ul>
 </section>
 <section id="required-permissions">
-<span id="setup-required-permissions"></span><h3><strong>2.2 Required Permissions</strong><a class="headerlink" href="#required-permissions" title="Link to this heading"></a></h3>
+<span id="setup-required-permissions"></span><h3><a class="toc-backref" href="#id7" role="doc-backlink">2.2 Required Permissions</a><a class="headerlink" href="#required-permissions" title="Link to this heading"></a></h3>
 <p>You must have access to the following platforms:</p>
 <ul class="simple">
 <li><p>Azure</p></li>
@@ -230,7 +252,7 @@
 </ul>
 </section>
 <section id="cloning-procedure">
-<span id="setup-cloning-procedure"></span><h3><strong>2.3 Cloning Procedure</strong><a class="headerlink" href="#cloning-procedure" title="Link to this heading"></a></h3>
+<span id="setup-cloning-procedure"></span><h3><a class="toc-backref" href="#id8" role="doc-backlink">2.3 Cloning Procedure</a><a class="headerlink" href="#cloning-procedure" title="Link to this heading"></a></h3>
 <ul>
 <li><p>Generate a new SSH key.</p></li>
 <li><p>Add the SSH key to your system.</p></li>
@@ -242,21 +264,21 @@
 </ul>
 </section>
 <section id="repositories-to-clone">
-<span id="setup-repositories-to-clone"></span><h3><strong>2.4 Repositories to Clone</strong><a class="headerlink" href="#repositories-to-clone" title="Link to this heading"></a></h3>
+<span id="setup-repositories-to-clone"></span><h3><a class="toc-backref" href="#id9" role="doc-backlink">2.4 Repositories to Clone</a><a class="headerlink" href="#repositories-to-clone" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>rr_io_amr</p></li>
 <li><p>rr_sootballs</p></li>
 </ul>
 </section>
 <section id="installations">
-<span id="setup-installations"></span><h3><strong>2.5 Installations</strong><a class="headerlink" href="#installations" title="Link to this heading"></a></h3>
+<span id="setup-installations"></span><h3><a class="toc-backref" href="#id10" role="doc-backlink">2.5 Installations</a><a class="headerlink" href="#installations" title="Link to this heading"></a></h3>
 <p>This guide assumes you’ve already installed ROS and set up your catkin workspace.</p>
 </section>
 </section>
 <section id="useful-tools-to-have-in-place-before-starting">
-<span id="useful-tools-section"></span><h2>3. Useful tools to have in place before starting<a class="headerlink" href="#useful-tools-to-have-in-place-before-starting" title="Link to this heading"></a></h2>
+<span id="useful-tools-section"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">3. Useful tools to have in place before starting</a><a class="headerlink" href="#useful-tools-to-have-in-place-before-starting" title="Link to this heading"></a></h2>
 <section id="aliases">
-<span id="useful-tools-aliases"></span><h3><strong>3.1 Aliases</strong><a class="headerlink" href="#aliases" title="Link to this heading"></a></h3>
+<span id="useful-tools-aliases"></span><h3><a class="toc-backref" href="#id12" role="doc-backlink">3.1 Aliases</a><a class="headerlink" href="#aliases" title="Link to this heading"></a></h3>
 <p>Aliases are text substitutions in linux. Whenever you want a string to be replaced by a larger text (usually a command or multiple commands), you can add an alias to your <cite>.bashrc</cite> and source it (<cite>.bashrc</cite> also gets sourced automatically whenever you open a new terminal window).</p>
 <p>Some useful aliases:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">gitpp</span><span class="o">=</span><span class="s1">&#39;git pull; git submodule sync; git submodule update --init --recursive; git submodule foreach git lfs pull&#39;</span>
@@ -265,7 +287,7 @@
 </div>
 </section>
 <section id="cli-highlighting">
-<span id="useful-tools-cli-highlighting"></span><h3><strong>3.2 CLI highlighting</strong><a class="headerlink" href="#cli-highlighting" title="Link to this heading"></a></h3>
+<span id="useful-tools-cli-highlighting"></span><h3><a class="toc-backref" href="#id13" role="doc-backlink">3.2 CLI highlighting</a><a class="headerlink" href="#cli-highlighting" title="Link to this heading"></a></h3>
 <p>This is a minor one but useful to know which branch you’re working on at any given point in time. Add to your <cite>.bashrc</cite> anywhere outside a block as such:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">parse_git_branch</span><span class="p">()</span> <span class="p">{</span> <span class="n">git</span> <span class="n">branch</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="o">|</span> <span class="n">sed</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;/^[^*]/d&#39;</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;s/* \(.*\)/(</span><span class="se">\1</span><span class="s1">)/&#39;</span> <span class="p">}</span>
 <span class="n">export</span> <span class="n">PS1</span><span class="o">=</span><span class="s2">&quot;\u@\h [\e[32m]\w [\e[91m]\$(parse_git_branch)[\e[00m]\$ &quot;</span>
@@ -273,15 +295,15 @@
 </div>
 </section>
 <section id="dev-containers">
-<span id="useful-tools-dev-containers"></span><h3><strong>3.3 Dev containers</strong><a class="headerlink" href="#dev-containers" title="Link to this heading"></a></h3>
+<span id="useful-tools-dev-containers"></span><h3><a class="toc-backref" href="#id14" role="doc-backlink">3.3 Dev containers</a><a class="headerlink" href="#dev-containers" title="Link to this heading"></a></h3>
 <p>Dev containers are super helpful as they come prebuilt with all external dependencies used by <cite>rr_io_amr</cite> and by extension, <cite>rr_sootballs</cite>.</p>
 <section id="concept-of-building-a-container">
-<span id="dev-containers-concept"></span><h4><strong>3.3.1 Concept of building a container</strong><a class="headerlink" href="#concept-of-building-a-container" title="Link to this heading"></a></h4>
+<span id="dev-containers-concept"></span><h4><a class="toc-backref" href="#id15" role="doc-backlink">3.3.1 Concept of building a container</a><a class="headerlink" href="#concept-of-building-a-container" title="Link to this heading"></a></h4>
 <p>A container is simply an environment to isolate processes with all the files they need to run. For example, if you install python on your local system, your python interpreter will point to the location where python was installed. However, if you run the python interpreter on a container, it points to a location within the container.</p>
 <p>The reason these two are different is because a container has its own isolated filesystem.</p>
 <p>To expose selected files on your computer to the environment of a container, you can mount it through CLI or a docker compose file.</p>
 <section id="building-the-container">
-<span id="dev-containers-building"></span><h5><strong>3.3.1.1 Building the container</strong><a class="headerlink" href="#building-the-container" title="Link to this heading"></a></h5>
+<span id="dev-containers-building"></span><h5><a class="toc-backref" href="#id16" role="doc-backlink">3.3.1.1 Building the container</a><a class="headerlink" href="#building-the-container" title="Link to this heading"></a></h5>
 <p>Containers can be built using <a href="#id1"><span class="problematic" id="id2">`</span></a>.Dockerfile`s. These define all the requirements that must be present in your container for development.</p>
 <p>Once defined, they can be built and tagged locally using:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">build</span> <span class="o">.</span> <span class="o">-</span><span class="n">f</span> <span class="o">&lt;.</span><span class="n">Dockerfile</span> <span class="n">path</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">t</span> <span class="o">&lt;</span><span class="n">tag</span><span class="o">&gt;</span>
@@ -290,12 +312,12 @@
 <p>at the root (<cite>.</cite>) of the filesystem being used to build them. This can also be done automatically using docker-compose, which is how we’ll be doing it for dev purposes.</p>
 </section>
 <section id="running-the-container">
-<span id="dev-containers-running"></span><h5><strong>3.3.1.2 Running the container</strong><a class="headerlink" href="#running-the-container" title="Link to this heading"></a></h5>
+<span id="dev-containers-running"></span><h5><a class="toc-backref" href="#id17" role="doc-backlink">3.3.1.2 Running the container</a><a class="headerlink" href="#running-the-container" title="Link to this heading"></a></h5>
 <p>Docker compose files are <cite>.yaml</cite> files containing instructions on what to do with the container once built. For our purposes, we can use them to install dependencies that need to be installed at runtime and mount our workspaces.</p>
 </section>
 </section>
 <section id="setting-up-your-own-dev-container">
-<span id="dev-containers-setting-up"></span><h4><strong>3.3.2 Setting up your own dev container</strong><a class="headerlink" href="#setting-up-your-own-dev-container" title="Link to this heading"></a></h4>
+<span id="dev-containers-setting-up"></span><h4><a class="toc-backref" href="#id18" role="doc-backlink">3.3.2 Setting up your own dev container</a><a class="headerlink" href="#setting-up-your-own-dev-container" title="Link to this heading"></a></h4>
 <p>Everyone generally builds and stores their dev container setup at <cite>rapyuta-robotics:rr_amr_dev_tools</cite>. Feel free to pick up any of them, load them into a new directory on your system at <cite>~/catkin_ws/.devcontainer</cite>.</p>
 <p>This directory should have a Dockerfile inheriting from an IO_AMR_BASE image, <cite>docker-compose.yaml</cite>, and a shell script to install dependencies into the container at runtime.</p>
 <p><strong>Dockerfile Example:</strong></p>
@@ -364,10 +386,10 @@ RUN curl -fsSL https://get.docker.com | sh
 </section>
 </section>
 <section id="development-process">
-<span id="development-process-section"></span><h2>4. Development process<a class="headerlink" href="#development-process" title="Link to this heading"></a></h2>
+<span id="development-process-section"></span><h2><a class="toc-backref" href="#id19" role="doc-backlink">4. Development process</a><a class="headerlink" href="#development-process" title="Link to this heading"></a></h2>
 <p>We follow an Agile framework for this process. This means that we will have a sprint planning in the beginning of every two week sprint. Here, we decide the priority bugs and feature tasks for the sprint based on the priority for the next release. These tasks will be your sole priority for the next two weeks. The only thing that supersedes this is an active unresolved customer issue that you are on call for.</p>
 <section id="rca">
-<span id="development-process-rca"></span><h3><strong>4.0 RCA</strong><a class="headerlink" href="#rca" title="Link to this heading"></a></h3>
+<span id="development-process-rca"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">4.0 RCA</a><a class="headerlink" href="#rca" title="Link to this heading"></a></h3>
 <p>Before starting off with bugs, here’s a note on RCAs. This will help you identify where a change may be necessary in the code. An additional bit of context that helps a lot for this is if you have run all the flows on the robot yourself and generally familiarized yourself with what a functioning system is supposed to look like.</p>
 <p>Issue tickets linked to the bugs in question generally have slack threads tracking them along with rosbags and links to Grafana pages pointing to the problem area in the system. Traces are also pretty helpful here, as they may give you information on the state of certain attributes at different points in the functioning of the system.</p>
 <ol class="arabic simple">
@@ -379,9 +401,9 @@ RUN curl -fsSL https://get.docker.com | sh
 </ol>
 </section>
 <section id="bugs">
-<span id="development-process-bugs"></span><h3><strong>4.1 Bugs</strong><a class="headerlink" href="#bugs" title="Link to this heading"></a></h3>
-<section id="get-the-ticket">
-<span id="bugs-get-ticket"></span><h4><strong>4.1.1 Get the Ticket</strong><a class="headerlink" href="#get-the-ticket" title="Link to this heading"></a></h4>
+<span id="development-process-bugs"></span><h3><a class="toc-backref" href="#id21" role="doc-backlink">4.1 Bugs</a><a class="headerlink" href="#bugs" title="Link to this heading"></a></h3>
+<section id="get-the-ticket-bugs">
+<span id="bugs-get-ticket"></span><h4><a class="toc-backref" href="#id22" role="doc-backlink">4.1.1 Get the Ticket (Bugs)</a><a class="headerlink" href="#get-the-ticket-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Retrieve the Azure Ticket:</dt><dd><ul>
@@ -402,8 +424,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="reproduce-the-bug">
-<span id="bugs-reproduce-bug"></span><h4><strong>4.1.2 Reproduce the Bug</strong><a class="headerlink" href="#reproduce-the-bug" title="Link to this heading"></a></h4>
+<section id="reproduce-the-bug-bugs">
+<span id="bugs-reproduce-bug"></span><h4><a class="toc-backref" href="#id23" role="doc-backlink">4.1.2 Reproduce the Bug (Bugs)</a><a class="headerlink" href="#reproduce-the-bug-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Identify the Bug Type:</dt><dd><ul>
@@ -429,8 +451,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="repository-setup">
-<span id="bugs-repository-setup"></span><h4><strong>4.1.3 Repository Setup</strong><a class="headerlink" href="#repository-setup" title="Link to this heading"></a></h4>
+<section id="repository-setup-bugs">
+<span id="bugs-repository-setup"></span><h4><a class="toc-backref" href="#id24" role="doc-backlink">4.1.3 Repository Setup (Bugs)</a><a class="headerlink" href="#repository-setup-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Identify the Relevant Package/Repository:</dt><dd><ul>
@@ -449,8 +471,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="implementation">
-<span id="bugs-implementation"></span><h4><strong>4.1.4 Implementation</strong><a class="headerlink" href="#implementation" title="Link to this heading"></a></h4>
+<section id="implementation-bugs">
+<span id="bugs-implementation"></span><h4><a class="toc-backref" href="#id25" role="doc-backlink">4.1.4 Implementation (Bugs)</a><a class="headerlink" href="#implementation-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Apply the Fix:</dt><dd><ul>
@@ -468,8 +490,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="testing">
-<span id="bugs-testing"></span><h4><strong>4.1.5 Testing</strong><a class="headerlink" href="#testing" title="Link to this heading"></a></h4>
+<section id="testing-bugs">
+<span id="bugs-testing"></span><h4><a class="toc-backref" href="#id26" role="doc-backlink">4.1.5 Testing (Bugs)</a><a class="headerlink" href="#testing-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Verify the Fix:</dt><dd><ul>
@@ -496,8 +518,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="raising-a-pull-request-pr">
-<span id="bugs-raising-pr"></span><h4><strong>4.1.6 Raising a Pull Request (PR)</strong><a class="headerlink" href="#raising-a-pull-request-pr" title="Link to this heading"></a></h4>
+<section id="raising-a-pull-request-pr-bugs">
+<span id="bugs-raising-pr"></span><h4><a class="toc-backref" href="#id27" role="doc-backlink">4.1.6 Raising a Pull Request (PR) (Bugs)</a><a class="headerlink" href="#raising-a-pull-request-pr-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Add the Modified Files:</dt><dd><ul>
@@ -537,8 +559,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="code-review-revisions">
-<span id="bugs-code-review"></span><h4><strong>4.1.7 Code Review &amp; Revisions</strong><a class="headerlink" href="#code-review-revisions" title="Link to this heading"></a></h4>
+<section id="code-review-revisions-bugs">
+<span id="bugs-code-review"></span><h4><a class="toc-backref" href="#id28" role="doc-backlink">4.1.7 Code Review &amp; Revisions (Bugs)</a><a class="headerlink" href="#code-review-revisions-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Address Review Comments:</dt><dd><ul>
@@ -563,8 +585,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="qa-testing">
-<span id="bugs-qa-testing"></span><h4><strong>4.1.8 QA Testing</strong><a class="headerlink" href="#qa-testing" title="Link to this heading"></a></h4>
+<section id="qa-testing-bugs">
+<span id="bugs-qa-testing"></span><h4><a class="toc-backref" href="#id29" role="doc-backlink">4.1.8 QA Testing (Bugs)</a><a class="headerlink" href="#qa-testing-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Request QA Testing:</dt><dd><ul>
@@ -596,8 +618,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="merging-backporting">
-<span id="bugs-merging-backporting"></span><h4><strong>4.1.9 Merging &amp; Backporting</strong><a class="headerlink" href="#merging-backporting" title="Link to this heading"></a></h4>
+<section id="merging-backporting-bugs">
+<span id="bugs-merging-backporting"></span><h4><a class="toc-backref" href="#id30" role="doc-backlink">4.1.9 Merging &amp; Backporting (Bugs)</a><a class="headerlink" href="#merging-backporting-bugs" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Merge the Changes:</dt><dd><ul>
@@ -631,9 +653,9 @@ RUN curl -fsSL https://get.docker.com | sh
 </section>
 </section>
 <section id="features">
-<span id="development-process-features"></span><h3><strong>4.2 Features</strong><a class="headerlink" href="#features" title="Link to this heading"></a></h3>
+<span id="development-process-features"></span><h3><a class="toc-backref" href="#id31" role="doc-backlink">4.2 Features</a><a class="headerlink" href="#features" title="Link to this heading"></a></h3>
 <section id="prepare-a-design-document">
-<span id="features-prepare-design-doc"></span><h4><strong>4.2.1 Prepare a Design Document</strong><a class="headerlink" href="#prepare-a-design-document" title="Link to this heading"></a></h4>
+<span id="features-prepare-design-doc"></span><h4><a class="toc-backref" href="#id32" role="doc-backlink">4.2.1 Prepare a Design Document</a><a class="headerlink" href="#prepare-a-design-document" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Understand the Requirements:</dt><dd><ul>
@@ -662,7 +684,7 @@ RUN curl -fsSL https://get.docker.com | sh
 </ul>
 </section>
 <section id="put-down-a-boilerplate-of-objects-and-data-structures-needed">
-<span id="features-boilerplate-objects"></span><h4><strong>4.2.2 Put Down a Boilerplate of Objects and Data Structures Needed</strong><a class="headerlink" href="#put-down-a-boilerplate-of-objects-and-data-structures-needed" title="Link to this heading"></a></h4>
+<span id="features-boilerplate-objects"></span><h4><a class="toc-backref" href="#id33" role="doc-backlink">4.2.2 Put Down a Boilerplate of Objects and Data Structures Needed</a><a class="headerlink" href="#put-down-a-boilerplate-of-objects-and-data-structures-needed" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Define the Objects and Structures:</dt><dd><ul>
@@ -689,8 +711,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="features-repository-setup">
-<span id="id3"></span><h4><strong>4.2.3 Repository Setup</strong><a class="headerlink" href="#features-repository-setup" title="Link to this heading"></a></h4>
+<section id="repository-setup-features">
+<span id="features-repository-setup"></span><h4><a class="toc-backref" href="#id34" role="doc-backlink">4.2.3 Repository Setup (Features)</a><a class="headerlink" href="#repository-setup-features" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Identify the Relevant Package/Repository:</dt><dd><ul>
@@ -710,7 +732,7 @@ RUN curl -fsSL https://get.docker.com | sh
 </ul>
 </section>
 <section id="implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc">
-<span id="features-implement-methods"></span><h4><strong>4.2.4 Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</strong><a class="headerlink" href="#implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc" title="Link to this heading"></a></h4>
+<span id="features-implement-methods"></span><h4><a class="toc-backref" href="#id35" role="doc-backlink">4.2.4 Implement the Methods in Each Object or Modify Existing Ones Based on the Requirements Defined in the Design Doc</a><a class="headerlink" href="#implement-the-methods-in-each-object-or-modify-existing-ones-based-on-the-requirements-defined-in-the-design-doc" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Develop Feature Logic:</dt><dd><ul>
@@ -739,7 +761,7 @@ RUN curl -fsSL https://get.docker.com | sh
 </ul>
 </section>
 <section id="write-unit-tests-in-sync-with-qa-for-the-feature">
-<span id="features-write-unit-tests"></span><h4><strong>4.2.5 Write Unit Tests in Sync with QA for the Feature</strong><a class="headerlink" href="#write-unit-tests-in-sync-with-qa-for-the-feature" title="Link to this heading"></a></h4>
+<span id="features-write-unit-tests"></span><h4><a class="toc-backref" href="#id36" role="doc-backlink">4.2.5 Write Unit Tests in Sync with QA for the Feature</a><a class="headerlink" href="#write-unit-tests-in-sync-with-qa-for-the-feature" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Collaborate with QA:</dt><dd><ul>
@@ -776,7 +798,7 @@ RUN curl -fsSL https://get.docker.com | sh
 </ul>
 </section>
 <section id="write-documentation">
-<span id="features-write-documentation"></span><h4><strong>4.2.6 Write Documentation</strong><a class="headerlink" href="#write-documentation" title="Link to this heading"></a></h4>
+<span id="features-write-documentation"></span><h4><a class="toc-backref" href="#id37" role="doc-backlink">4.2.6 Write Documentation</a><a class="headerlink" href="#write-documentation" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Document the Feature:</dt><dd><ul>
@@ -803,7 +825,7 @@ RUN curl -fsSL https://get.docker.com | sh
 </ul>
 </section>
 <section id="add-ample-logs-and-traces-without-introducing-too-much-log-spam">
-<span id="features-add-logs-traces"></span><h4><strong>4.2.7 Add Ample Logs and Traces Without Introducing Too Much Log Spam</strong><a class="headerlink" href="#add-ample-logs-and-traces-without-introducing-too-much-log-spam" title="Link to this heading"></a></h4>
+<span id="features-add-logs-traces"></span><h4><a class="toc-backref" href="#id38" role="doc-backlink">4.2.7 Add Ample Logs and Traces Without Introducing Too Much Log Spam</a><a class="headerlink" href="#add-ample-logs-and-traces-without-introducing-too-much-log-spam" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Add Logging for Key Actions:</dt><dd><ul>
@@ -837,8 +859,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="features-raising-pr">
-<span id="id4"></span><h4><strong>4.2.8 Raising a Pull Request (PR)</strong><a class="headerlink" href="#features-raising-pr" title="Link to this heading"></a></h4>
+<section id="raising-a-pull-request-pr-features">
+<span id="features-raising-pr"></span><h4><a class="toc-backref" href="#id39" role="doc-backlink">4.2.8 Raising a Pull Request (PR) (Features)</a><a class="headerlink" href="#raising-a-pull-request-pr-features" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Add the Modified Files:</dt><dd><ul>
@@ -878,8 +900,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="features-code-review">
-<span id="id5"></span><h4><strong>4.2.9 Code Review &amp; Revisions</strong><a class="headerlink" href="#features-code-review" title="Link to this heading"></a></h4>
+<section id="code-review-revisions-features">
+<span id="features-code-review"></span><h4><a class="toc-backref" href="#id40" role="doc-backlink">4.2.9 Code Review &amp; Revisions (Features)</a><a class="headerlink" href="#code-review-revisions-features" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Address Review Comments:</dt><dd><ul>
@@ -904,8 +926,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="features-qa-testing">
-<span id="id6"></span><h4><strong>4.2.10 QA Testing</strong><a class="headerlink" href="#features-qa-testing" title="Link to this heading"></a></h4>
+<section id="qa-testing-features">
+<span id="features-qa-testing"></span><h4><a class="toc-backref" href="#id41" role="doc-backlink">4.2.10 QA Testing (Features)</a><a class="headerlink" href="#qa-testing-features" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Request QA Testing:</dt><dd><ul>
@@ -937,8 +959,8 @@ RUN curl -fsSL https://get.docker.com | sh
 </li>
 </ul>
 </section>
-<section id="features-merging-backporting">
-<span id="id7"></span><h4><strong>4.2.11 Merging &amp; Backporting</strong><a class="headerlink" href="#features-merging-backporting" title="Link to this heading"></a></h4>
+<section id="merging-backporting-features">
+<span id="features-merging-backporting"></span><h4><a class="toc-backref" href="#id42" role="doc-backlink">4.2.11 Merging &amp; Backporting (Features)</a><a class="headerlink" href="#merging-backporting-features" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Merge the Changes:</dt><dd><ul>
@@ -973,7 +995,7 @@ RUN curl -fsSL https://get.docker.com | sh
 </section>
 </section>
 <section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id43" role="doc-backlink">Revision History</a><a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Rev.</p></th>
@@ -991,10 +1013,8 @@ revision</p></th>
 </td>
 <td><p>11-Mar-2025</p></td>
 <td><p>First draft</p></td>
-<td><p>Sriram Radhakrishna
-(Robotic Systems Engineer, sb-systems)</p></td>
-<td><p>Dinesh Kumar V
-(Technical Program Manager - Chennai)</p></td>
+<td><p>Sriram Radhakrishna</p></td>
+<td><p>Dinesh Kumar V</p></td>
 </tr>
 </tbody>
 </table>
@@ -1004,12 +1024,15 @@ revision</p></th>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="development.html" class="btn btn-neutral float-left" title="Development Process:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ui_process.html" class="btn btn-neutral float-right" title="UI Development Process (Frontend)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Rajkumar Subbiaya.</p>
+    <p>&#169; Copyright 2025, Rapyuta Robotics.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
