@@ -31,11 +31,18 @@ This book is intended for all members of the **Systems Team**, including:
    :maxdepth: 1
 
    rte
+
+.. toctree::
+   :maxdepth: 2
+
+   qa_process
+
+.. toctree::
+   :maxdepth: 1
+
    last
 
 .. toctree::
    :maxdepth: 1
 
-   systems
-
-
+   history
