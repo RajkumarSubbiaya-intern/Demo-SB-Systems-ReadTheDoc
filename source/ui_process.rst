@@ -81,6 +81,13 @@ You must have access to the following platforms:
      - Username: admin
      - Password: admin-test
 
+   .. image:: ui_process_pic/sui.png
+      :alt: UI - SUI
+
+   .. raw:: html
+
+      <br><br>
+
 #. ``rr_orders_ui_modules``
 
    - Modules related to Work, Upload, and Picking Worklines (in amr-ui)
@@ -90,6 +97,12 @@ You must have access to the following platforms:
    - UI components related to the Robot Screen
    - Access URL: http://localhost:10001/
 
+   .. image:: ui_process_pic/rui.png
+      :alt: UI - RUI
+
+   .. raw:: html
+
+      <br><br>
 
 .. _workflow_section:
 
