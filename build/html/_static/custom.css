@@ -3,6 +3,11 @@
     font-weight: bold;
 }
 
+/*Increase page width*/
+.wy-nav-content {
+  max-width: none;
+}
+
 /* Highlight the entire sidebar */
 .wy-nav-side {
     background-color: #222c32 !important;  /* Choose your preferred color */

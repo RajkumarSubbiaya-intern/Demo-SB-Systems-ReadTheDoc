@@ -83,6 +83,7 @@ You must have access to the following platforms:
 
    .. image:: ui_process_pic/sui.png
       :alt: UI - SUI
+      :width: 600px
 
    .. raw:: html
 
@@ -99,6 +100,7 @@ You must have access to the following platforms:
 
    .. image:: ui_process_pic/rui.png
       :alt: UI - RUI
+      :width: 600px
 
    .. raw:: html
 
