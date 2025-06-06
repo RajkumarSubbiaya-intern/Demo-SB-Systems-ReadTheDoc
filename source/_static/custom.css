@@ -8,6 +8,11 @@
   max-width: none;
 }
 
+/* Justify body content */
+.rst-content p {
+    text-align: justify;
+}
+
 /* Highlight the entire sidebar */
 .wy-nav-side {
     background-color: #222c32 !important;  /* Choose your preferred color */
