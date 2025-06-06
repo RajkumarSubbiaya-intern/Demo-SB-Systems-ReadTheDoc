@@ -15,7 +15,6 @@ SB- Systems Architecture Overview
 
 .. image:: _static/systems_team_overview.png
    :alt: Systems Team Overview
-   :align: center
    :width: 600px
 
 .. raw:: html
